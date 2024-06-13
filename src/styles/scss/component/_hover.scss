@@ -1,0 +1,23 @@
+.hover-nav-line {
+    position: relative;
+    &::after {
+        content: "";
+        width: 0;
+        height: 1px;
+        bottom: 0px;
+        position: absolute;
+        left: auto;
+        right: 0;
+        z-index: 1;
+        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+        background: var(--primary);
+    }
+    &:hover {
+        color: var(--primary) !important;
+        &:after {
+            width: 100%;
+            left: 0;
+            right: auto;
+        }
+    }
+}

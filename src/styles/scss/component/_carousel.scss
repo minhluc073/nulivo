@@ -1,0 +1,16 @@
+.box-navigation{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    .navigation-arrow{
+        width: 16px;
+        height: 16px;
+        @include flex(center,center);
+        font-size: 16px;
+        cursor: pointer;
+        .icon{
+            color: var(--primary);
+            font-weight: 500;
+        }
+    }
+}
