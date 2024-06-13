@@ -18,9 +18,7 @@ export default function Featured() {
         </div>
 
         {dataTemplate.map((item) => (
-          <div className="col-4" key={item.id}>
-            <TemplateItem  item={item} />
-          </div>
+          <TemplateItem key={item.id} item={item} />
         ))}
       </div>
     </section>
