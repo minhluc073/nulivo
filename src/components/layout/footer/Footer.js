@@ -19,7 +19,7 @@ export default function Footer() {
                       <Image src={logo} alt="logo" width={120} height={37} />
                     </Link>
                   </div>
-                  <div className="title text-gradient-2">
+                  <div className="title text-gradient-1">
                     Become a creator and join our team
                   </div>
                 </div>

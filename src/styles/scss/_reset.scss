@@ -399,6 +399,8 @@ label {
 	line-height: 25.2px;
 }
 
+
+
 // color text
 .text_primary {
 	color: var(--primary);
@@ -427,11 +429,7 @@ label {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.text-gradient-2 {
-	background: var(--gradient-2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+
 
 // background color
 .bg_primary {
@@ -561,4 +559,7 @@ label {
 
 .flat-spacing-1{
 	padding: 80px 0px;
+}
+.flat-spacing-2{
+	padding: 54px 0px;
 }

@@ -1,4 +1,5 @@
 import "/public/fonts/font-icons.css";
+import "@/styles/css/swiper-bundle.min.css";
 import "@/styles/scss/app.scss";
 import { Inter, Poppins } from "next/font/google";
 

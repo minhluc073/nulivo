@@ -1,5 +1,38 @@
-import dataTemplate from "@/data/data-template-1";
+'use client'
+import dataTemplate from "@/data/data-template";
 import TemplateItem from "../elements/TemplateItem";
+import { Autoplay, Navigation, Pagination } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
+
+const swiperOptions = {
+	modules: [Autoplay, Pagination, Navigation],
+	slidesPerView: 1,
+	spaceBetween: 30,
+	navigation: {
+		clickable: true,
+		nextEl: ".nav-prev-feature",
+		prevEl: ".nav-next-feature",
+	},
+	pagination: {
+		el: ".sw-pagination-feature",
+		clickable: true,
+	},
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 15,
+		},
+		991: {
+			slidesPerView: 3,
+			spaceBetween: 15,
+		},
+
+		1440: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+}
 
 export default function Featured() {
   return (
@@ -16,10 +49,15 @@ export default function Featured() {
             </div>
           </div>
         </div>
-
-        {dataTemplate.map((item) => (
-          <TemplateItem key={item.id} item={item} />
-        ))}
+		<Swiper {...swiperOptions} className="swiper tf-sw-feature">
+			<div className="swiper-wrapper">
+				{dataTemplate.map((item) => (
+					<SwiperSlide key={item.id}>
+						<TemplateItem item={item} />	
+					</SwiperSlide>
+				))}
+			</div>
+		</Swiper>
       </div>
     </section>
   );
