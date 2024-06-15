@@ -4,6 +4,7 @@ import WidgetCount from "@/components/sections/WidgetCount";
 import Featured from "@/components/sections/Featured";
 import Template from "@/components/sections/Template";
 import Featured2 from "@/components/sections/Featured2";
+import RankingSection from "@/components/sections/RankingSec";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Featured />
         <Template/>
         <Featured2/>
+        <RankingSection/>
       </Layout>
     </>
   );

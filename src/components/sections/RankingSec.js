@@ -1,28 +1,22 @@
-import Pagination from "@/components/elements/Pagination";
-import Layout from "@/components/layout/Layout";
-import PageTitle from "@/components/sections/PageTitle";
 import Image from "next/image";
 import Link from "next/link";
-import { dataRanking2 } from "@/data/data-ranking";
-export default function Ranking() {
-  return (
-    <>
-      <Layout>
-        <PageTitle
-          title="Ranking"
-          subtitle="Ranking of Nulivo Market Top Authors"
-        />
-        <div className="flat-breadcrumb">
+import { dataRanking } from "@/data/data-ranking";
+import Pagination from "../elements/Pagination";
+export default function RankingSection(){
+    return(
+
+        <div className="flat-spacing-1">
             <div className="container">
-                <div className="breadcrumb">
-					<Link className="item" href="/category">Category</Link>
-                    <Link className="item" href="#">Free-Templates</Link>
-                    <Link className="item" href="#">Free-Powerpoint-Templates</Link>
-			    </div>
-            </div>
-        </div>
-        <div className="flat-spacing-1 flat-ranking">
-            <div className="container">
+                <div className="flat-title d-flex align-items-center justify-content-between gap-15 flex-wrap">
+                    <div className="box-left">
+                        <h4 className="title">Ranking</h4>
+                        <p className="text_black-1 sub-title">Ranking of Nulivo Market Top Authors</p>
+                    </div>
+                    <Link href="/ranking" className="view-all">
+                        View All
+                        <i className="icon icon-arr-right"></i>
+                    </Link>
+                </div>
                 <div className="wrap-ranking">
                     <div className="table-responsive">
                         <table className="table-ranking">
@@ -35,7 +29,7 @@ export default function Ranking() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {dataRanking2.map((item) =>(
+                                {dataRanking.map((item) =>(
                                     <tr key={item?.id}>
                                         <td>{item?.id}</td>
                                         <td>
@@ -52,13 +46,7 @@ export default function Ranking() {
                         </table>
                     </div>
                 </div>
-                <div className="pagination-wrap d-flex justify-content-center">
-                    <Pagination/>
-                </div>
             </div>
-                
         </div>
-      </Layout>
-    </>
-  );
+    )
 }

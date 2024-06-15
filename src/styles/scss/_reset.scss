@@ -363,6 +363,19 @@ a {
 label {
 	font-weight: 600;
 }
+table{
+	table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+}
+tr{
+	display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    white-space: nowrap !important;
+    transition: all .3s ease;
+}
 
 .link {
 	@include transition3;
@@ -532,8 +545,8 @@ label {
 	gap: 12px;
 }
 
-.gap-16 {
-	gap: 16px;
+.gap-15 {
+	gap: 15px;
 }
 
 .gap-20 {
