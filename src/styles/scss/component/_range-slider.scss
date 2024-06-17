@@ -1,0 +1,48 @@
+.horizontal-slider {
+    padding-bottom: 18px;
+}
+
+.example-track.example-track-0 {
+	background: var(--primary);
+}
+
+.horizontal-slider .example-track {
+	height: 2px;
+	border: none;
+	border-radius: 30px;
+}
+
+.example-track.example-track-1 {
+	background: var(--grey-3);
+}
+
+.example-thumb {
+    top: -5px;
+	font-size: 0;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background: var(--primary);
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.price-range {
+	line-height: 0px !important;
+}
+
+
+
+
+// range two
+.horizontal-slider.st2 {
+
+	.example-track.example-track-0,
+	.example-track.example-track-2 {
+		background: var(--grey-3);
+	}
+
+	.example-track.example-track-1 {
+		background: var(--primary);
+	}
+}

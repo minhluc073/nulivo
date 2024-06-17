@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { dataRanking } from "@/data/data-ranking";
-import Pagination from "../elements/Pagination";
 export default function RankingSection(){
     return(
 

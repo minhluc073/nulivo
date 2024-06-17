@@ -124,3 +124,32 @@
         }
     }
 }
+
+.tf-check{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    border: 1px solid var(--black-2);
+    @include flex(center, center);
+    &::before {
+        content: "\e918";
+        position: absolute;
+        font-family: var(--fontIcon);
+        color: var(--white);
+        font-size: 12px;
+        line-height: 24px;
+    }
+    &:checked{
+        &::before{
+            color: var(--black-2);
+        }
+    }
+    &:focus{
+        border-color: var(--black-2);
+        
+    }
+}
+
