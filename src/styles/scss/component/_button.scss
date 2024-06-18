@@ -6,12 +6,24 @@
     line-height: 21px;
     font-weight: 600;
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     @include transition3;
     background-color: var(--primary);
     border-radius: 99px;
     &:hover {
         background-color: var(--primary-hover);
+    }    
+}
+.btn-line{
+    padding: 13.5px 34.5px;
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--line-2);
+    box-sizing: border-box;
+    &:hover{
+        background-color: var(--primary);
+        color: var(--white);
     }
 }
 .btn-icon {

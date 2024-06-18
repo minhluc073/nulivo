@@ -5,13 +5,29 @@ import img4 from "/public/images/templates/item-25.jpg";
 import img5 from "/public/images/templates/item-26.jpg";
 import img6 from "/public/images/templates/item-27.jpg";
 import img7 from "/public/images/templates/item-28.jpg";
-import img8 from "/public/images/templates/item-12.jpg";
-import img9 from "/public/images/templates/item-13.jpg";
-import img10 from "/public/images/templates/item-14.jpg";
-import img11 from "/public/images/templates/item-15.jpg";
-import img12 from "/public/images/templates/item-16.jpg";
-
-
+import img8 from "/public/images/templates/item-29.jpg";
+import img9 from "/public/images/templates/item-30.jpg";
+import img10 from "/public/images/templates/item-31.jpg";
+import img11 from "/public/images/templates/item-32.jpg";
+import img12 from "/public/images/templates/item-33.jpg";
+import img13 from "/public/images/templates/item-34.jpg";
+import img14 from "/public/images/templates/item-35.jpg";
+import img15 from "/public/images/templates/item-36.jpg";
+import img16 from "/public/images/templates/item-37.jpg";
+import img17 from "/public/images/templates/item-38.jpg";
+import img18 from "/public/images/templates/item-39.jpg";
+import img19 from "/public/images/templates/item-40.jpg";
+import img20 from "/public/images/templates/item-41.jpg";
+import img21 from "/public/images/templates/item-42.jpg";
+import img22 from "/public/images/templates/item-43.jpg";
+import img23 from "/public/images/templates/item-44.jpg";
+import img24 from "/public/images/templates/item-45.jpg";
+import img25 from "/public/images/templates/item-46.jpg";
+import img26 from "/public/images/templates/item-47.jpg";
+import img27 from "/public/images/templates/item-48.jpg";
+import img28 from "/public/images/templates/item-49.jpg";
+import img29 from "/public/images/templates/item-50.jpg";
+import img30 from "/public/images/templates/item-51.jpg";
 import avt from "/public/images/avatar/avt-1.jpg";
 
 export const dataTemplateCate1 = [
@@ -99,11 +115,10 @@ export const dataTemplateCate1 = [
   {
     id: 8,
     img: img8,
-    link: "/item-single",
+    link: "/item-single-free",
     title: "PowerPoint Presentation Template",
     avt: avt,
     name: "Themesflat",
-    price: "$27",
     rate: 4.5,
     sale: 209,
     like: 3.801,
@@ -155,5 +170,207 @@ export const dataTemplateCate1 = [
     sale: 209,
     like: 3.801,
   },
+  {
+    id: 13,
+    img: img13,
+    link: "/item-single",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    price: "$27",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 14,
+    img: img14,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 15,
+    img: img15,
+    link: "/item-single",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    price: "$27",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
 ];
 
+export const dataTemplateCate2 = [
+  {
+    id: 1,
+    img: img16,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 2,
+    img: img17,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 3,
+    img: img18,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 4,
+    img: img19,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 5,
+    img: img20,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 6,
+    img: img21,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 7,
+    img: img22,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 8,
+    img: img23,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 9,
+    img: img24,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 10,
+    img: img25,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 11,
+    img: img26,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 12,
+    img: img27,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 13,
+    img: img28,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 14,
+    img: img29,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 15,
+    img: img30,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+];

@@ -361,7 +361,7 @@ a {
 }
 
 label {
-	font-weight: 600;
+	// font-weight: 600;
 }
 table{
 	table-layout: auto;
@@ -550,6 +550,9 @@ tr{
 
 .gap-15 {
 	gap: 15px;
+}
+.gap-16{
+	gap: 16px;
 }
 
 .gap-20 {

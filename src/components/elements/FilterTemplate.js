@@ -19,7 +19,7 @@ export default function FilterTemplate(){
 
 
     return(
-        <aside className="filter-wrap">
+        <aside className="filter-wrap fixed-sidebar">
             <div className="box-title">
                 <div className="h7">Filter</div>
                 <div className="box-clear">
@@ -34,7 +34,7 @@ export default function FilterTemplate(){
                         <span className="icon icon-arr-up"></span>
                     </Accordion.Header>
                     <Accordion.Body className="not-bg">
-                        <div className="d-flex gap-10">
+                        <div className="d-flex gap-10 flex-wrap">
                             <div className="tag-check">
                                 <span className="icon icon-check"></span>
                                 <span className="text">New items</span>

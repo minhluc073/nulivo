@@ -134,18 +134,22 @@
     border-radius: 6px;
     border: 1px solid var(--black-2);
     @include flex(center, center);
-    &::before {
-        content: "\e918";
-        position: absolute;
-        font-family: var(--fontIcon);
-        color: var(--white);
-        font-size: 12px;
-        line-height: 24px;
-    }
-    &:checked{
-        &::before{
-            color: var(--black-2);
+    &:checked {
+        border-color: var(--primary);
+
+        &::before {
+            opacity: 1;
         }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 4px;
+        inset: 3;
+        width: 18px;
+        height: 18px;
+        background-color: var(--primary);
+        opacity: 0;
     }
     &:focus{
         border-color: var(--black-2);
@@ -153,3 +157,33 @@
     }
 }
 
+.dropdown-select{
+    display: flex;
+    gap: 8px;
+    .dropdown-toggle{
+        padding: 0;
+        padding-right: 20px;
+        min-width: 67px;
+       &::after{
+        right: 0;
+       }
+
+    }
+    .sortby-select{
+        min-width: 120px;
+    }
+    .dropdown-menu{
+        padding: 10px 15px;
+        border-radius: 15px;
+        min-width: 120px;
+    
+   } 
+   .dropdown-item{
+        padding: 5px 0px;
+        border-radius: 0;
+        &:hover{
+            background-color: transparent;
+            color: var(--primary);
+        }
+   }
+}
