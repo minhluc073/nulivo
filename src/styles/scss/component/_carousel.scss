@@ -33,3 +33,20 @@
 
     }
 }
+
+.thumbs-sw-pagination .swiper-slide {
+    width: auto;
+}
+.single-gallery-wrapper{
+    img{
+        width: 100%;
+    }
+    .thumbs-sw-pagination{
+        margin-top: 8px;
+    }
+    .img-thumb-pagination,
+    .image-sw-single{
+        border-radius: 14px;
+        overflow: hidden;
+    }
+}

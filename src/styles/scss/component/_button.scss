@@ -1,19 +1,23 @@
 .tf-btn {
     font-family: var(--poppins);
-    padding: 14.5px 34.5px;
+    padding: 14px 34.5px;
     color: var(--white);
     font-size: 14px;
-    line-height: 21px;
+    line-height: 20px;
     font-weight: 600;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     @include transition3;
     background-color: var(--primary);
+    border: 1px solid transparent;
     border-radius: 99px;
     &:hover {
         background-color: var(--primary-hover);
-    }    
+    }  
+    &.btn-sm{
+        padding: 12px 20px;
+    }  
 }
 .btn-line{
     padding: 13.5px 34.5px;
@@ -24,6 +28,7 @@
     &:hover{
         background-color: var(--primary);
         color: var(--white);
+        border-color: transparent;
     }
 }
 .btn-icon {

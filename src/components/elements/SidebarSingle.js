@@ -83,6 +83,59 @@ export default function SidebarSingle(){
                     </li>
                 </ul>
             </div>
+            <div className="wrap-information">
+                <div className="h7 title">Item Information</div>
+                <ul className="box-info">
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Item Released</div>
+                        <span className="text text_black-1">16 January 23</span>
+                    </li>
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Last Update</div>
+                        <span className="text text_black-1">17 November 23</span>
+                    </li>
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Category</div>
+                        <div className="breadcrumb">
+                            <Link className="item" href="/category">powerpoint-templates</Link>
+                            <Link className="item" href="#">powerpoint-diagrams</Link>
+                        </div>
+                    </li>
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Software</div>
+                        <span className="text text_black-1">PowerPoint</span>
+                    </li>
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Layered</div>
+                        <span className="text text_black-1">yes</span>
+                    </li>
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Pixel Dimensions</div>
+                        <span className="text text_black-1">16 January 23</span>
+                    </li>
+                    <li className="item-info">
+                        <div className="title-item-info fw-bold text_black-1">Tags</div>
+                        <ul className="d-flex align-items-center flex-wrap gap-10">
+                            <li><Link href="#" className="tag">powerpoint</Link></li>
+                            <li><Link href="#" className="tag">ppt</Link></li>
+                            <li><Link href="#" className="tag">diagram</Link></li>
+                            <li><Link href="#" className="tag">diagrams</Link></li>
+                            <li><Link href="#" className="tag">diagrams</Link></li>
+                            <li><Link href="#" className="tag">diagrams</Link></li>
+                            <li><Link href="#" className="tag">model</Link></li>
+                            <li><Link href="#" className="tag">product-development</Link></li>
+                            <li><Link href="#" className="tag">product-development</Link></li>
+                            <li><Link href="#" className="tag">process</Link></li>
+                            <li><Link href="#" className="tag">process</Link></li>
+                            <li><Link href="#" className="tag">development-process</Link></li>
+                            <li><Link href="#" className="tag">diagrams</Link></li>
+                            <li><Link href="#" className="tag">product-policy</Link></li>
+                            <li><Link href="#" className="tag">product-success</Link></li>
+                            <li><Link href="#" className="tag">goals</Link></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </aside>
     )
 }

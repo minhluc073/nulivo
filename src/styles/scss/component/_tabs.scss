@@ -17,6 +17,7 @@
         width: 100%;
     }
     .nav-link{
+        font-family: var(--poppins);
         width: 100%;
         padding:10px;
         border-radius: 99px;
@@ -33,6 +34,14 @@
             background-color: var(--primary);
             border-color: var(--primary);
             color: var(--white);
+        }
+    }
+    &.st2{
+        .nav-item{
+            width: auto;
+        }
+        .nav-link{
+            padding: 12px 20px;
         }
     }
 }

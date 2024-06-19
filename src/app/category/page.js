@@ -82,7 +82,7 @@ export default function Category() {
                                 </div>
                             </div>
                         </div>
-                        <div className="box-text-notification">
+                        <div className="box-text-notification card-box-2">
                             <div className="box-p">
                                 <h6>Best Google Slides Presentation Templates to Download in 2024</h6>
                                 <p>You are a Google fan and actually prefer its tool to create your next presentation but you have something specific and a bit complicated on your mind? Worry not, we have you covered. Best G-Slides that you will defiantly like in one place!</p>

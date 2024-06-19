@@ -230,15 +230,16 @@ input[type="color"]::placeholder {
 }
 
 textarea {
-	height: 112px;
+	height: 120px;
 	resize: none;
+	border-radius: 14px;
 }
 button:not(.icon, .accordion-button) {
 	font-family: var(--poppins);
-	padding: 14.5px 34.5px;
+	padding: 14px 34.5px;
 	color: var(--white);
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 20px;
 	font-weight: 600;
 	display: flex;
 	@include transition3;
@@ -351,6 +352,14 @@ h6 {
 	line-height: 27px;
 	font-weight: 600;
 }
+.title-v2{
+	font-size: 28px;
+	line-height: 28.6px;
+	font-weight: 600;
+	color: #000000;
+	font-family: var(--poppins);
+	margin-bottom: 26px;
+}
 
 a {
 	@include transition3;
@@ -435,6 +444,9 @@ tr{
 }
 .text_black-4 {
 	color: #1D2128;
+}
+.text_black-5 {
+	color: #1C1C1E;
 }
 .text_blue {
 	color: var(--blue);
