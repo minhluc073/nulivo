@@ -1,8 +1,8 @@
 import Link from "next/link"
 
-export default function Pagination(){
+export default function Pagination({center}){
     return (
-        <ul className="pagination-box">
+        <ul className={`pagination-box ${center ? "justify-content-center": ""}`}>
             <li>
                 <Link href="#" className="nav-link arrow"><span className="icon icon-arr-left"></span></Link>    
             </li>

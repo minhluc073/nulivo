@@ -20,7 +20,9 @@ import Image from "next/image";
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 import Select from "react-select";
-import { dataRecent1 } from "@/data/data-template-recent";
+import { dataRecent2 } from "@/data/data-template-recent";
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import ReactStars from "react-rating-stars-component";
 
 const categorySelect = [
     {
@@ -42,7 +44,7 @@ const categorySelect = [
   ];
 
 
-export default function SingleItem() {
+export default function SingleItemFree() {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const [selectCategory, setSelectCategory] = useState();
 
@@ -154,7 +156,7 @@ export default function SingleItem() {
                       <SwiperSlide>
                         <div className="image-sw-single">
                           <Image
-                            src="/images/banner/banner-single-1.jpg"
+                            src="/images/banner/banner-single-8.jpg"
                             alt="images"
                             width={850}
                             height={529}
@@ -164,7 +166,7 @@ export default function SingleItem() {
                       <SwiperSlide>
                         <div className="image-sw-single">
                         <Image
-                            src="/images/banner/banner-single-3.jpg"
+                            src="/images/banner/banner-single-10.jpg"
                             alt="images"
                             width={850}
                             height={529}
@@ -174,7 +176,7 @@ export default function SingleItem() {
                       <SwiperSlide>
                         <div className="image-sw-single">
                         <Image
-                            src="/images/banner/banner-single-4.jpg"
+                            src="/images/banner/banner-single-11.jpg"
                             alt="images"
                             width={850}
                             height={529}
@@ -184,7 +186,7 @@ export default function SingleItem() {
                       <SwiperSlide>
                         <div className="image-sw-single">
                         <Image
-                            src="/images/banner/banner-single-5.jpg"
+                            src="/images/banner/banner-single-12.jpg"
                             alt="images"
                             width={850}
                             height={529}
@@ -194,7 +196,7 @@ export default function SingleItem() {
                       <SwiperSlide>
                         <div className="image-sw-single">
                         <Image
-                            src="/images/banner/banner-single-6.jpg"
+                            src="/images/banner/banner-single-13.jpg"
                             alt="images"
                             width={850}
                             height={529}
@@ -204,7 +206,7 @@ export default function SingleItem() {
                       <SwiperSlide>
                         <div className="image-sw-single">
                         <Image
-                            src="/images/banner/banner-single-2.jpg"
+                            src="/images/banner/banner-single-14.jpg"
                             alt="images"
                             width={850}
                             height={529}
@@ -218,7 +220,7 @@ export default function SingleItem() {
 							<SwiperSlide>
 								<div className="img-thumb-pagination">
                                 <Image
-                                    src="/images/banner/banner-single-2.jpg"
+                                    src="/images/banner/banner-single-9.jpg"
                                     alt="images"
                                     width={135}
                                     height={84}
@@ -228,7 +230,7 @@ export default function SingleItem() {
                             <SwiperSlide>
 								<div className="img-thumb-pagination">
                                 <Image
-                                    src="/images/banner/banner-single-3.jpg"
+                                    src="/images/banner/banner-single-10.jpg"
                                     alt="images"
                                     width={135}
                                     height={84}
@@ -238,7 +240,7 @@ export default function SingleItem() {
                             <SwiperSlide>
 								<div className="img-thumb-pagination">
                                 <Image
-                                    src="/images/banner/banner-single-4.jpg"
+                                    src="/images/banner/banner-single-11.jpg"
                                     alt="images"
                                     width={135}
                                     height={84}
@@ -248,7 +250,7 @@ export default function SingleItem() {
                             <SwiperSlide>
 								<div className="img-thumb-pagination">
                                 <Image
-                                    src="/images/banner/banner-single-5.jpg"
+                                    src="/images/banner/banner-single-12.jpg"
                                     alt="images"
                                     width={135}
                                     height={84}
@@ -258,7 +260,7 @@ export default function SingleItem() {
                             <SwiperSlide>
 								<div className="img-thumb-pagination">
                                 <Image
-                                    src="/images/banner/banner-single-6.jpg"
+                                    src="/images/banner/banner-single-13.jpg"
                                     alt="images"
                                     width={135}
                                     height={84}
@@ -268,7 +270,7 @@ export default function SingleItem() {
                             <SwiperSlide>
 								<div className="img-thumb-pagination">
                                 <Image
-                                    src="/images/banner/banner-single-7.jpg"
+                                    src="/images/banner/banner-single-14.jpg"
                                     alt="images"
                                     width={135}
                                     height={84}
@@ -286,6 +288,9 @@ export default function SingleItem() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="comments">Comments</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link eventKey="review">Review</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="report">Report</Nav.Link>
@@ -466,6 +471,81 @@ export default function SingleItem() {
                                     </form>
                                 </div>
                            </Tab.Pane>
+                           <Tab.Pane eventKey="review">
+                                <div className="wrap-single-review">
+                                    <div className="box-rate-review">
+                                        <div className="heading">
+                                            <div className="title-rate-review">4.8</div>
+                                            <span>/ 5</span>
+                                        </div>
+                                        <div className="content-bottom">
+                                            <div className="list-star justify-content-center">
+                                                <span className="icon icon-star"></span>
+                                                <span className="icon icon-star"></span>
+                                                <span className="icon icon-star"></span>
+                                                <span className="icon icon-star"></span>
+                                                <span className="icon icon-star"></span>
+                                            </div>
+                                            <p>Based on 1.738 reviews</p>
+                                        </div>
+                                    </div>
+                                    <div className="box-rate-progress">
+                                        <div className="rate-progress-item">
+                                            <div className="number-rating d-flex align-items-center gap-2">
+                                                <span>5</span>
+                                                <i className="icon icon-star"></i>
+                                            </div>
+                                            <ProgressBar className="progress-rate" now={100} />
+                                            <span className="val-rate">100</span>
+                                        </div>
+                                        <div className="rate-progress-item">
+                                            <div className="number-rating d-flex align-items-center gap-2">
+                                                <span>4</span>
+                                                <i className="icon icon-star"></i>
+                                            </div>
+                                            <ProgressBar className="progress-rate" now={87} />
+                                            <span className="val-rate">87</span>
+                                        </div>
+                                        <div className="rate-progress-item">
+                                            <div className="number-rating d-flex align-items-center gap-2">
+                                                <span>3</span>
+                                                <i className="icon icon-star"></i>
+                                            </div>
+                                            <ProgressBar className="progress-rate" now={32} />
+                                            <span className="val-rate">32</span>
+                                        </div>
+                                        <div className="rate-progress-item">
+                                            <div className="number-rating d-flex align-items-center gap-2">
+                                                <span>2</span>
+                                                <i className="icon icon-star"></i>
+                                            </div>
+                                            <ProgressBar className="progress-rate" now={24} />
+                                            <span className="val-rate">24</span>
+                                        </div>
+                                        <div className="rate-progress-item">
+                                            <div className="number-rating d-flex align-items-center gap-2">
+                                                <span>1</span>
+                                                <i className="icon icon-star"></i>
+                                            </div>
+                                            <ProgressBar className="progress-rate" now={0} />
+                                            <span className="val-rate">0</span>
+                                        </div>
+                                    </div>
+                                    <div className="box-rate-check">
+                                        <div className="fw-semibold title-font">Rating  *</div>
+                                        <ReactStars
+                                            classNames="star-item"
+                                            count={5}
+                                            size={30}
+                                            emptyIcon={<i className="icon icon-star"></i>}
+                                            fullIcon={<i className="icon icon-star"></i>}
+                                            color="#E1E1E1"
+                                            activeColor="#FCB500"
+                                        />
+                                    </div>
+                                    <Link href="#" className="tf-btn w-100">Send comment</Link>
+                                </div>
+                           </Tab.Pane>
                            <Tab.Pane eventKey="report">
                                 <form className="wrap-single-report">
                                     <div className="h9 title">Report This Item</div>
@@ -493,8 +573,6 @@ export default function SingleItem() {
                                     <button className="tf-btn w-100">Post comment</button>
                                 </form>
                            </Tab.Pane>
-                          
-
                         </Tab.Content>
                         
                     </Tab.Container>
@@ -552,7 +630,7 @@ export default function SingleItem() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <SidebarSingle />
+                <SidebarSingle free/>
               </div>
             </div>
           </div>
@@ -561,7 +639,7 @@ export default function SingleItem() {
             <div className="container">
                 <h6 className="title-v2">You May Also Like</h6>
                 <div className="row">
-                    {dataRecent1.map((item)=>(
+                    {dataRecent2.map((item)=>(
                         <div className="col-xl-3 col-lg-4 col-sm-6 box" key={item.id}>
                             <TemplateItem item={item} />
                         </div>

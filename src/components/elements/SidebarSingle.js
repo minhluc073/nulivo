@@ -2,8 +2,8 @@
 import Image from "next/image";
 import avt from "/public/images/avatar/avt-1.jpg";
 import Link from "next/link";
-
-export default function SidebarSingle(){
+ 
+export default function SidebarSingle({ free}){
     return(
         <aside className="sidebar-single-wrap fixed-sidebar">
             <div className="box-title">
@@ -83,6 +83,14 @@ export default function SidebarSingle(){
                     </li>
                 </ul>
             </div>
+            { 
+                free &&
+                <div className="box-need-more">
+                    <div className="h7">Need more slides</div>
+                    <p className="text_black-1">Purchase the full template and get free updates forever!</p>
+                    <Link href="#" className="tf-btn w-100 btn-line">Get it now</Link>
+                </div>
+            }
             <div className="wrap-information">
                 <div className="h7 title">Item Information</div>
                 <ul className="box-info">

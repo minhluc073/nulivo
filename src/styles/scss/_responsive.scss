@@ -19,6 +19,25 @@
             padding: 0 90px;
         }
     }
+    .wrap-single-comment{
+        .reply{
+            padding-left: 64px;
+        }
+    }
+    .btn-search{
+        min-width: 196px;
+    }
+    .flat-banner-about{
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+    }
+    .box-about-text-v2{
+        padding-bottom: 80px;
+        .content{
+            max-width: 630px;
+            margin: auto;
+        }
+    }
 }
 @media only screen and (min-width: 1150px) {
     .banner-page-title {
@@ -86,20 +105,7 @@
     }
 }
 
-@media only screen and (max-width: 1199px) {
-    .header {
-        .search-box-dropdown {
-            .box-dropdown {
-                display: none;
-            }
-            .box-search {
-                &::before {
-                    display: none;
-                }
-            }
-        }
-    }
-}
+
 @media only screen and (max-width: 1199px) {
     .header {
         .search-box-dropdown {
@@ -118,10 +124,11 @@
             display: none;
         }
     }
+   
 }
 @media only screen and (max-width: 1149px) {
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     h1,
     .h1 {
         font-size: 50px;
@@ -191,7 +198,53 @@
     .meta-select-filter{
         justify-content: flex-start;
     }
+    .flat-single-wrapper{
+        flex-direction: column-reverse;
+    }
+    .sidebar-single-wrap {
+        margin-bottom: 30px;
+    }
+    .wrap-single-review {
+        .heading {
+            .title-rate-review{
+                font-size: 50px;
+                line-height: 50px;
+            }
+            span{
+                font-size: 20px;
+                line-height: 40px;
+            }
+        }
+    }
+    .flat-banner{
+        &.banner-v2{
+            .banner-content{
+                top: 20%;
+            }
+            img{
+                height: 450px;
+            }
+        }
+    }
+    .flat-counter-2{
+        margin-top: -60px;
+    }
+    .search-box{
+        input{
+            padding-left: 20px;
+            padding-right: 70px;
+        }
+        .tf-btn{
+            padding: 15px;
+        }
+    }
 }
+@media only screen and (max-width: 768px){
+    .box-about-text{
+        margin-top: 30px;
+    }
+}
+
 
 @media only screen and (max-width: 575px) {
     h1,
