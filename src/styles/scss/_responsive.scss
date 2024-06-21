@@ -30,12 +30,27 @@
     .flat-banner-about{
         display: grid;
 	    grid-template-columns: 1fr 1fr;
+        overflow: hidden;
     }
     .box-about-text-v2{
         padding-bottom: 80px;
         .content{
             max-width: 630px;
             margin: auto;
+        }
+    }
+    .sw-pagination{
+        &:not(.swiper-pagination-lock) {
+            margin-top: 30px;
+        }
+    }
+    .tf-row-layout{
+        flex-direction: row;
+        .tf-layout-content{
+            width: calc(72% - 15px);
+        }
+        .tf-layout-sidebar{
+            width: calc(28% - 15px);
         }
     }
 }
@@ -238,10 +253,19 @@
             padding: 15px;
         }
     }
+    .our-item {
+        .box-content{
+            margin-top: 20px;
+            gap: 15px;
+        }
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
         margin-top: 30px;
+    }
+    .box-contact{
+        padding: 15px;
     }
 }
 

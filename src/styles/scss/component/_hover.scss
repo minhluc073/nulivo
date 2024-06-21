@@ -21,3 +21,51 @@
         }
     }
 }
+.hover-img{
+    .box-img{
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@include transition3;
+		}
+	}
+    &:hover {
+		.box-img {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+.btn-hover-icon{
+    &:hover{
+        .icon{
+            animation: 0.3s link-icon linear;
+        }
+    }
+}
+
+
+@keyframes link-icon {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+    49% {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

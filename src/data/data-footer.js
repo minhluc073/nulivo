@@ -11,27 +11,27 @@ const dataFooter = [
             {
                 id: 2,
                 text: 'Imprint',
-                link: '#'
+                link: '/imprint'
             },
             {
                 id: 3,
                 text: 'Privacy Policy',
-                link: '#'
+                link: '/privacy-policy'
             },
             {
                 id: 4,
                 text: 'Terms And Conditions',
-                link: '#'
+                link: '/terms-of-use'
             },
             {
                 id: 5,
                 text: 'Refund Policy',
-                link: '#'
+                link: '/refund-policy'
             },
             {
                 id: 6,
                 text: 'Licenses',
-                link: '#'
+                link: '/licenses'
             }
         ]
     },
