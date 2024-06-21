@@ -11,7 +11,7 @@ const dataFooter = [
             {
                 id: 2,
                 text: 'Imprint',
-                link: '/imprint'
+                link: '/Imprint'
             },
             {
                 id: 3,

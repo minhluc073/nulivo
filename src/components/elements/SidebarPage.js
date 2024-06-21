@@ -9,7 +9,7 @@ export default function SidebarPage(){
                 <div className="h9 title">Categories</div>
                 <ul className="list-categories">
                     <li>
-                        <Link href="/imprint" className="categories-item btn-hover-icon">
+                        <Link href="/Imprint" className="categories-item btn-hover-icon">
                             <span className="text">Imprint</span>
                             <svg className="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.9375 6.1875L15.75 9M15.75 9L12.9375 11.8125M15.75 9H2.25" stroke="#303538" strokeLinecap="round" strokeLinejoin="round"/>
