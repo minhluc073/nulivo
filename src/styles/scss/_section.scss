@@ -1442,4 +1442,21 @@
 		border-radius: 14px;
 		overflow: hidden;
 	}
+	.wrap-comment{
+		h6{
+			padding-bottom: 12px;
+			border-bottom: 1px solid var(--line-2);
+		}
+		.wrap-single-comment{
+			margin-top: 20px;
+
+		}
+		.comment-item{
+			&:not(:last-child){
+				padding-bottom: 34px;
+				margin-bottom: 34px;
+				border-bottom: 1px solid var(--line-2);
+			}
+		}
+	}
 }
