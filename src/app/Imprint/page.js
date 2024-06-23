@@ -41,7 +41,7 @@ export default function Imprint() {
                                 <div className="h9">4. Data protection and privacy: </div>
                                 <Link href="#" className="text_primary">https://www.nulivo.com/page/privacy-policy</Link>
                             </div>
-                            <div className="box-bottom">
+                            <div className="box-bottom-divider">
                                 <div className="left d-flex gap-8 align-items-center">
                                     <span className="text">Tags:</span>
                                     <ul className="d-flex gap-8">

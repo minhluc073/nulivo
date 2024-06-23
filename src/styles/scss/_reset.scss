@@ -421,7 +421,16 @@ tr{
 	font-size: 14px;
 	line-height: 25.2px;
 }
-
+.text-3{
+	font-size: 12px;
+	line-height: 16.8px;
+	color: #7C818B;
+}
+.text-4{
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #1C1C1E;
+}
 
 
 // color text
@@ -448,6 +457,9 @@ tr{
 }
 .text_black-5 {
 	color: #1C1C1E;
+}
+.text_grey-1{
+	color: #7C818B;
 }
 .text_blue {
 	color: var(--blue);
@@ -510,6 +522,15 @@ tr{
 
 .mt-16 {
 	margin-top: 16px;
+}
+.mb-16{
+	margin-bottom: 16px;
+}
+.mb-14{
+	margin-bottom: 14px;
+}
+.mb-10{
+	margin-bottom: 10px;
 }
 
 // radius

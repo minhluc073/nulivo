@@ -85,7 +85,7 @@ export default function PrivacyPolicy() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="box-bottom">
+                            <div className="box-bottom-divider">
                                 <div className="left d-flex gap-8 align-items-center">
                                     <span className="text">Tags:</span>
                                     <ul className="d-flex gap-8">

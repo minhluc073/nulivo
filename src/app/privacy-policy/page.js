@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
                                 <div className="h9">9. Contact Us</div>
                                 <p>If you have any questions about this Privacy Policy, the practices of this Site, or your dealings with this website, please contact us at <span className="text_primary">support@nulivo.com</span></p>
                             </div>
-                            <div className="box-bottom">
+                            <div className="box-bottom-divider">
                                 <div className="left d-flex gap-8 align-items-center">
                                     <span className="text">Tags:</span>
                                     <ul className="d-flex gap-8">
