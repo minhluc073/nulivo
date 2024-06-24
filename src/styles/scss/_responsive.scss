@@ -139,6 +139,12 @@
             display: none;
         }
     }
+    .step-benefit-item{
+        margin-bottom: 20px;
+        .arrow{
+            display: none;
+        }
+    }
    
 }
 @media only screen and (max-width: 1149px) {
@@ -266,6 +272,12 @@
     }
     .box-contact{
         padding: 15px;
+    }
+    .form-comment{
+        .ip-group-2{
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
 }
 

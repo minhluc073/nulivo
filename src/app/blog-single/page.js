@@ -536,6 +536,31 @@ export default function SingleBlog() {
                             </div>
                         </div>
                     </div>
+                    <div className="box wrap-form-comment">
+                        <h6>Leave a comment</h6>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form className="form-comment">
+                            <fieldset className="group-ip">
+                                <label className="fw-semibold">Your name *</label>
+                                <input type="text" placeholder="Your name"/>
+                            </fieldset>
+                            <div className="group-ip ip-group-2">
+                                <fieldset>
+                                    <label className="fw-semibold">Phone number</label>
+                                    <input type="text" placeholder="Your phone"/>
+                                </fieldset>
+                                <fieldset>
+                                    <label className="fw-semibold">Email address</label>
+                                    <input type="text" placeholder="Your email"/>
+                                </fieldset>
+                            </div>
+                            <fieldset className="group-ip">
+                                <label className="fw-semibold">Your Comment</label>
+                                <textarea placeholder="Your message"></textarea>
+                            </fieldset>
+                            <button className="tf-btn w-100">Send comment</button>
+                        </form>
+                    </div>
                 </div>
               </div>
               <div className="col-lg-4">
