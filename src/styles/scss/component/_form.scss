@@ -157,6 +157,35 @@
     }
 }
 
+.tf-check-2{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    -webkit-appearance: none;
+    border-radius: 999px;
+    border: 1px solid var(--black-2);
+    @include flex(center, center);
+    &:checked {
+        border-color: var(--primary);
+
+        &::before {
+            opacity: 1;
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: 999px;
+        inset: 3;
+        width: 16px;
+        height: 16px;
+        background-color: var(--primary);
+        opacity: 0;
+    }
+}
+
+
 .dropdown-select{
     display: flex;
     gap: 8px;

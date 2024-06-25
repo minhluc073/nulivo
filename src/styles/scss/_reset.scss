@@ -228,11 +228,19 @@ input[type="color"]::placeholder {
 	color: var(--rgba-black-3);
 	@include transition3;
 }
+input[type="radio"]{
+	width: 22px;
+	height: 22px;
+}
+
 
 textarea {
 	height: 120px;
 	resize: none;
 	border-radius: 14px;
+}
+.textarea-2{
+	height: 148px;
 }
 button:not(.icon, .accordion-button) {
 	font-family: var(--poppins);
@@ -242,6 +250,7 @@ button:not(.icon, .accordion-button) {
 	line-height: 20px;
 	font-weight: 600;
 	display: flex;
+	justify-content: center;
 	@include transition3;
 	background-color: var(--primary);
 	border: 1px solid var(--primary);
@@ -331,6 +340,7 @@ h4 {
 h5 {
 	font-size: 30px;
 	line-height: 45px;
+
 }
 
 h6 {
@@ -351,6 +361,13 @@ h6 {
 	font-size: 18px;
 	line-height: 27px;
 	font-weight: 600;
+}
+.h10{
+	font-family: var(--poppins);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25.2px;
+	color: #08091B;
 }
 .title-v2{
 	font-size: 28px;
@@ -383,7 +400,7 @@ tr{
 	display: table-row;
     vertical-align: inherit;
     border-color: inherit;
-    white-space: nowrap !important;
+    white-space: nowrap;
     transition: all .3s ease;
 }
 
@@ -457,6 +474,9 @@ tr{
 }
 .text_black-5 {
 	color: #1C1C1E;
+}
+.text_black-6{
+	color: #08091B;
 }
 .text_grey-1{
 	color: #7C818B;

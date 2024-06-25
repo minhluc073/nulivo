@@ -1,10 +1,9 @@
-import Layout from "@/components/layout/Layout";
-import Image from "next/image";
-import Link from "next/link";
-import img from "/public/images/banner/banner-404.png"
-
-export default function Custom404() {
-    return (
+import Layout from "@/components/layout/Layout"
+import Image from "next/image"
+import Link from "next/link"
+import img from "/public/images/banner/banner-payment.png"
+export default function PaymentSuccess(){
+    return(
         <>
             <Layout>
                 <div className="flat-breadcrumb">
@@ -21,24 +20,27 @@ export default function Custom404() {
                 </div>
                 <div className="flat-spacing-1">
                     <div className="container">
-                        <div className="flat-wrap-404">
+                        <div className="flat-wrap-payment">
                             <div className="banner-img text-center">
                                 <Image
                                     src={img}
-                                    width={430}
+                                    width={372}
                                     height={372}
-                                    alt="banner-404"
+                                    alt="banner-payment"
                                 />
                             </div>
                             <div className="box-content text-center">
-                                <h2 className="title">Page Not Found</h2>
-                                <p className="text_black-3">The page you are looking for is moved or does not exist any more</p>
-                                <Link href="/" className="tf-btn btn-md">Back to home page</Link>
+                                <h2 className="title">Payment Success</h2>
+                                <div className="box-check-code">
+                                    <p className="text_black-3">Your purchase is been confirmed. Check your email for details</p>
+                                    <span className="order-code">Order no: 1e22824e5e06767ea1</span>
+                                </div>
+                                <p className="text_black-3">The  ordered item is now available to your <span className="fw-semibold text_primary">Downloads</span> page</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </Layout>
         </>
-    );
+    )
 }
