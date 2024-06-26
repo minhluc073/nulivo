@@ -32,3 +32,10 @@
         }
     }
 }
+
+.offcanvas-backdrop{
+    background: rgb(22, 30, 45);
+    &.show{
+        opacity: 0.3;
+    }
+}
