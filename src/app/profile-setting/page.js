@@ -25,7 +25,7 @@ const countrySelect = [
     },
   ];
 
-  const city = [
+const city = [
     {
       value: "v1",
       label: "New York",
@@ -44,7 +44,7 @@ const countrySelect = [
     },
   ];
 
-  const showNoti = [
+const showNoti = [
     {
       value: "v1",
       label: "Off",
@@ -55,7 +55,7 @@ const countrySelect = [
     },
   ];
 
-  const showCountry = [
+const showCountry = [
     {
       value: 1,
       label: "Off",
