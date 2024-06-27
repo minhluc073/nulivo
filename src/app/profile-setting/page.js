@@ -261,7 +261,7 @@ export default function ProfileSetting (){
                         </fieldset>
                         <fieldset>
                             <label className="label">Your Referral Url</label>
-                            <input className="ip-fill" type="text" defaultValue="https://www.nulivo.com/?ref=NVHung"/>
+                            <input className="ip-fill" type="text" required defaultValue="https://www.nulivo.com/?ref=NVHung"/>
                         </fieldset>
                     </div>
                     <div className="box">
@@ -269,31 +269,32 @@ export default function ProfileSetting (){
                         <div className="sub-box group-ip-3">
                             <fieldset>
                                 <label className="label">Facebook</label>
-                                <input className="ip-fill" placeholder="Your Url"/>
+                                <input className="ip-fill" required placeholder="Your Url"/>
                             </fieldset>
                             <fieldset>
                                 <label className="label">Twitter</label>
-                                <input className="ip-fill" placeholder="Your Url"/>
+                                <input className="ip-fill" required placeholder="Your Url"/>
                             </fieldset>
                             <fieldset>
                                 <label className="label">Pinterest</label>
-                                <input className="ip-fill" placeholder="Your Url"/>
+                                <input className="ip-fill" required placeholder="Your Url"/>
                             </fieldset>
                         </div>
                         <div className="sub-box group-ip-3">
                             <fieldset>
                                 <label className="label">Instagram</label>
-                                <input className="ip-fill" placeholder="Your Url"/>
+                                <input className="ip-fill" required placeholder="Your Url"/>
                             </fieldset>
                             <fieldset>
                                 <label className="label">Dribbble</label>
-                                <input className="ip-fill" placeholder="Your Url"/>
+                                <input className="ip-fill" required placeholder="Your Url"/>
                             </fieldset>
                             <fieldset>
                                 <label className="label">Behance</label>
-                                <input className="ip-fill" placeholder="Your Url"/>
+                                <input className="ip-fill" required placeholder="Your Url"/>
                             </fieldset>
                         </div>
+                        <Link href="#" className="tf-btn width-1">Save changes</Link>
                     </div>
                     
                 </LayoutAdmin>

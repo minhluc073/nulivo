@@ -41,6 +41,11 @@
             //     flex-grow: 1;
             // }
         }
+        .group-ip-3{
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }
 
