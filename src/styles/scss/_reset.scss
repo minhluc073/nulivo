@@ -206,7 +206,7 @@ input[type="color"] {
 	@include transition3;
 	color: var(--black-2);
 	&:focus {
-		border-color: var(--primary);
+		border-color: var(--line-2);
 	}
 }
 
@@ -233,6 +233,17 @@ input[type="radio"]{
 	height: 22px;
 }
 
+input{
+	&.ip-fill{
+		background-color: var(--white);
+		&:valid{
+			background-color: var(--line-2);
+			border-color: var(--line-2);
+		}
+		
+	}
+	
+}
 
 textarea {
 	height: 120px;
@@ -241,6 +252,9 @@ textarea {
 }
 .textarea-2{
 	height: 148px;
+}
+.textarea-3{
+	height: 150px;
 }
 button:not(.icon, .accordion-button) {
 	font-family: var(--poppins);
@@ -369,8 +383,8 @@ h6 {
 	line-height: 25.2px;
 	color: #08091B;
 }
-.title-v2{
-	font-size: 28px;
+.h11{
+	font-size: 26px;
 	line-height: 28.6px;
 	font-weight: 600;
 	color: #000000;
@@ -448,7 +462,11 @@ tr{
 	line-height: 22.4px;
 	color: #1C1C1E;
 }
-
+.text-5{
+	font-size: 12px;
+	line-height: 13.2px;
+	color: #7B7B7B;
+}
 
 // color text
 .text_primary {

@@ -12,8 +12,8 @@ export default function SidebarDashboard() {
 					<li className={`nav-menu-item ${pathname === '/dashboard' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/dashboard"><span className="icon icon-dashboard" /> Home</Link>
 					</li>
-					<li className={`nav-menu-item ${pathname === '/profile' ? 'active' : ''}`}>
-						<Link className="nav-menu-link" href="/profile"><span className="icon icon-account-line-3" />Profile</Link>
+					<li className={`nav-menu-item ${pathname === '/profile-setting' ? 'active' : ''}`}>
+						<Link className="nav-menu-link" href="/profile-setting"><span className="icon icon-account-line-3" />Profile</Link>
 					</li>
 					<li className={`nav-menu-item ${pathname === '/my-invoices' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/setting"><span className="icon icon-settings" /> Setting</Link>

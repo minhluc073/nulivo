@@ -143,7 +143,7 @@ export default function VerifyAccount2() {
                                         <p>{countrySelect.label}</p>
                                         </div>
                                     )}
-                                />
+                                    />
                                 </fieldset>
                                 <div className="text-sub d-flex align-items-center gap-12"><p>You may want to choose</p><span className="fw-bold d-flex align-items-center gap-8"><Image src="/images/card/flag-1.png" alt="flag" width={20} height={20}/>Ausria</span></div>
                             </div>

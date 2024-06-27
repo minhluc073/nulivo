@@ -637,7 +637,7 @@ export default function SingleItemFree() {
         </div>
         <div className="flat-template flat-spacing-2 pt-0">
             <div className="container">
-                <h6 className="title-v2">You May Also Like</h6>
+                <h6 className="h11">You May Also Like</h6>
                 <div className="row">
                     {dataRecent2.map((item)=>(
                         <div className="col-xl-3 col-lg-4 col-sm-6 box" key={item.id}>
