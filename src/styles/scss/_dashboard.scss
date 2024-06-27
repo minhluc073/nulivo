@@ -4,6 +4,8 @@
     .main-content{
         padding-left: 30px;
         border-left: 1px solid var(--line-2);
+        flex-grow: 1;
+        width: calc(100% - 300px);
     }
     .main-content-inner{
         .box{
@@ -86,5 +88,177 @@
     span{
         color: #ed2027;
         font-weight: 600;
+    }
+}
+
+.flat-overview{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    .overview-item{
+        flex-grow: 1;
+    }
+}
+.overview-item{
+    .box-top{
+        padding: 20px;
+        border-radius: 14px;
+        background-color: #F6ECEA;
+        position: relative;
+        .title-overview{
+            font-family: var(--poppins);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 17.6px;
+            color: var(--black-1);    
+        }
+        .count{
+            font-family: var(--poppins);
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 26px;
+            line-height: 28.6px;
+            color: #624741;
+            font-weight: 700;
+        }
+    }
+    .box-bottom{
+        @include flex(center, space-between);
+        margin-top: -15px;
+        gap: 20px;
+        padding: 28px 20px 8px;
+        border-radius:  0px 0px 14px 14px;
+        background-color: #E2D8D6;
+        .title-date{
+            font-family: var(--poppins);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15.4px;
+            color: var(--black-3);
+        }
+        .count-date{
+            font-family: var(--poppins);
+            margin-top: 8px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 19.8px;
+            color: #624741;
+        }
+        .icon{
+            font-size: 24px;
+            color: #624741;
+        }
+    }
+    &.bg-2{
+        .box-top{
+            background-color: #E4F0EE;
+            .count{
+                color: #2C4E48;
+            }
+        }
+        .box-bottom{
+            background-color: #DAE6E4;
+            .icon,
+            .count-date{
+                color: #2C4E48;
+            }
+        }
+    }
+    &.bg-3{
+        .box-top{
+            background-color: #FBF1E5;
+            .count{
+                color: #5F4F3C;
+            }
+        }
+        .box-bottom{
+            background-color: #EDE4D5;
+            .icon,
+            .count-date{
+                color: #5F4F3C;
+            }
+        }
+    }
+    &.bg-4{
+        .box-top{
+            background-color: #E7EEF4;
+            .count{
+                color: #3C4852;
+            }
+        }
+        .box-bottom{
+            background-color: #D9E3EC;
+            .icon,
+            .count-date{
+                color: #3C4852;
+            }
+        } 
+    }
+}
+.table-public-file{
+    min-width: 800px;
+    margin-bottom: 24px;
+    .item-product{
+        padding-right: 30px;
+        .banner-img{
+            border-radius: 4px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .title-template{
+            font-family: var(--poppins);
+            font-weight: 500;
+            color: #08091B;
+        }
+    }
+    thead{
+        th{
+            font-family: var(--poppins);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--black-1);
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--line-2);
+            &:not(:last-child){
+                padding-right: 30px;
+            }
+            &:first-child{
+                width: 40%;
+            }
+        }
+    }
+    .item{
+        td{
+            padding: 24px 0px;
+            align-content: flex-start;
+            border-bottom: 1px solid var(--line-2);
+        }
+    }
+    tr{
+        white-space: unset;
+    }
+    
+}
+
+.banner-improve {
+	background-image: url("../../../public/images/banner/banner-improve.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px 46px 47px 40px;
+    border-radius: 14px;
+    @include flex(center, space-between);
+    gap: 28px;
+
+    .desc{
+        margin-top: 20px;
+    }
+    .tf-btn{
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-width: 240px;
     }
 }

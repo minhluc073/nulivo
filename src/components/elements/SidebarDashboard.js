@@ -7,8 +7,8 @@ export default function SidebarDashboard() {
 	const pathname = usePathname()
 	return (
 		<>
-			<div className="sidebar-menu-dashboard fixed-sidebar">
-				<ul className="box-menu-dashboard">
+			<div className="sidebar-menu-dashboard">
+				<ul className="box-menu-dashboard fixed-sidebar">
 					<li className={`nav-menu-item ${pathname === '/dashboard' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/dashboard"><span className="icon icon-dashboard" /> Home</Link>
 					</li>

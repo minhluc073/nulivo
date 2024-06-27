@@ -21,7 +21,12 @@
     &.btn-md{
         padding-left: 28px;
         padding-right: 28px;
-    }  
+    } 
+    &.width-1{
+        padding-left: 15px;
+        padding-right: 15px;
+        min-width: 162px;
+    } 
 }
 .btn-line{
     padding: 13.5px 34.5px;

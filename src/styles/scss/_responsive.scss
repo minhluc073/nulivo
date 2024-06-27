@@ -78,6 +78,11 @@
     .card-box-3{
         padding: 30px;
     }
+    .banner-improve{
+        h3{
+            line-height: 48px;
+        }
+    }
 }
 @media only screen and (min-width: 1150px) {
     .banner-page-title {
@@ -187,13 +192,18 @@
         left: 0;
         bottom: 0;
         overflow-y: auto;
-        z-index: 20;
+        z-index: 1045;
         transition: all .4s ease;
         transform: translateX(0);
         border-right: 1px solid var(--line-2);
     }
     .layout-wrap{
         display: block;
+        .main-content{
+            width: 100%;
+            padding-left: 0;
+            border: none;
+        }
         .sidebar-menu-dashboard{
             transform: translateX(-100%);
         }
@@ -210,15 +220,20 @@
     }
     .overlay-dashboard {
         position: fixed;
+        z-index: 1040;
         right: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        z-index: 1;
         background: rgba(22, 30, 45, .3);
         transition: all .3s ease 0s;
         visibility: hidden;
         opacity: 0;
+    }
+    .sidebar-menu-dashboard{
+        .fixed-sidebar{
+            position: unset;
+        }
     }
    
 }
@@ -356,6 +371,19 @@
     .verify-action-wrap{
         padding: 0px 60px;
     }
+    .wrap-swiper {
+        .navigation-circle-arrow{
+            margin-top: 10px;
+            transform: unset;
+            position: unset;
+        }
+    }
+    .banner-improve{
+        padding: 30px;
+        .banner-img{
+            display: none;
+        }
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
@@ -378,6 +406,7 @@
     .card-verify{
         
     }
+    
 }
 
 
