@@ -174,7 +174,7 @@ export default function VerifyAccount2() {
                                 </div>
                             </div>
                             <div className="box-btn d-flex gap-10 flex-wrap justify-content-center">
-                                <Link className="tf-btn btn-line" href="/verify-1">Back</Link>
+                                <Link className="tf-btn btn-line-primary" href="/verify-1">Back</Link>
                                 <Link className="tf-btn" href="/verify-3">Continue</Link>
                             </div>
                         </div>

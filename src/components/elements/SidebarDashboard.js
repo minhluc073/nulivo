@@ -24,8 +24,8 @@ export default function SidebarDashboard() {
 					<li className={`nav-menu-item ${pathname === '/manage-items' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/manage-items"><span className="icon icon-manage" /> Manage items</Link>
 					</li>
-					<li className={`nav-menu-item ${pathname === '/manage-items' ? 'active' : ''}`}>
-						<Link className="nav-menu-link" href="/manage-items"><span className="icon icon-upload1" /> Upload item</Link>
+					<li className={`nav-menu-item ${pathname === '/upload-items' ? 'active' : ''}`}>
+						<Link className="nav-menu-link" href="/upload-items"><span className="icon icon-upload1" /> Upload item</Link>
 					</li>
 					<li className={`nav-menu-item ${pathname === '/earnings' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/earnings"><span className="icon icon-diamond" /> Earnings</Link>

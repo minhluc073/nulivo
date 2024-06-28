@@ -45,7 +45,7 @@ export default function BecomeAuthorDashboard(){
                         <label htmlFor="check">I have read and agree to Nulivo Market <span className="text_primary">author terms</span> </label>
                     </fieldset>
                     <div className="d-flex gap-20 flex-wrap">
-                        <Link href="#" className="tf-btn btn-line width-1">Back</Link>
+                        <Link href="#" className="tf-btn btn-line-primary width-1">Back</Link>
                         <Link href="#" className="tf-btn width-1">Submit</Link>
                     </div>
                 </LayoutAdmin>

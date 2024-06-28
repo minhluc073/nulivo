@@ -108,7 +108,7 @@ export default function VerifyAccount4() {
                             </form>
                             <div className="box">By click agree & continue. I have read and agree to <span className="text_primary">Nulivo User agreement, Privacy Policy</span> and <span className="text_primary">Electronic Communications Delivery Policy.</span></div>
                             <div className="box-btn d-flex gap-10 flex-wrap justify-content-center">
-                                <Link className="tf-btn btn-line" href="/verify-3">Back</Link>
+                                <Link className="tf-btn btn-line-primary" href="/verify-3">Back</Link>
                                 <Link className="tf-btn" href="/maintenance">Continue</Link>
                             </div>
                         </div>

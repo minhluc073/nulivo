@@ -80,7 +80,7 @@ export default function VerifyAccount3() {
                                 </fieldset>
                             </div>
                             <div className="box-btn d-flex gap-10 flex-wrap justify-content-center">
-                                <Link className="tf-btn btn-line" href="/verify-2">Back</Link>
+                                <Link className="tf-btn btn-line-primary" href="/verify-2">Back</Link>
                                 <Link className="tf-btn" href="/verify-4">Continue</Link>
                             </div>
                         </div>

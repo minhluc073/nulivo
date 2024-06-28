@@ -467,6 +467,11 @@ tr{
 	line-height: 13.2px;
 	color: #7B7B7B;
 }
+.text-6{
+	font-size: 12px;
+	line-height: 16.8px;
+	color: rgba(48, 53, 56,0.5);
+}
 
 // color text
 .text-primary,
@@ -542,11 +547,15 @@ tr{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-
+.mt-2{
+	margin-top: 2px !important;
+}
 .mt-4 {
 	margin-top: 4px !important;
 }
-
+.mt-6{
+	margin-top: 6px;
+}
 .mt-8 {
 	margin-top: 8px;
 }

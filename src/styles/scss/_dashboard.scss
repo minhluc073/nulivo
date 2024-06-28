@@ -227,9 +227,11 @@
     min-width: 800px;
     margin-bottom: 24px;
     .item-product{
-        padding-right: 30px;
+        // padding-right: 30px;
         .banner-img{
             border-radius: 4px;
+            width: 80px;
+            height: 50px;
             overflow: hidden;
             flex-shrink: 0;
         }
@@ -237,6 +239,14 @@
             font-family: var(--poppins);
             font-weight: 500;
             color: #08091B;
+        }
+    }
+    tbody{
+        td{
+            &:not(:last-child)
+            {
+                padding-right: 20px;
+            }
         }
     }
     thead{
@@ -266,9 +276,98 @@
     tr{
         white-space: unset;
     }
-    
-}
+    .status-1{
+        line-height: 26px;
+        padding: 3px 16px;
+        border-radius: 999px;
+        display: inline-block;
+        &.complete{
+            background-color: rgba(0, 183, 179, 0.3);
+            color: #006462;
+        }
+    }
+    .status-2 {
+        line-height: 26px;
+        border-radius: 999px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        min-width: 62px;
+        &.Draft{
+            background-color: #E4E4E4;
+            color: #737373;
+        }
+        &.Active{
+            background-color: rgba(0, 183, 179, 0.3);
+            color: #006462;
+        }
+    }
 
+    .list-action{
+        svg{
+            pointer-events: none;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            line-height: 21px;
+            font-family: var(--poppins);
+            font-weight: 600;
+            cursor: pointer;
+        }
+        li{
+            &:not(:last-child){
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .invoice{
+        background-color: var(--rgba-primary-2);
+        border-radius: 999px;
+        .icon{
+            font-size: 26px;
+            color: var(--primary);
+        }
+    }
+    .list-star{
+        display: flex;
+        gap: 3px;
+        .icon{
+            font-size: 12px;
+            color: #E1E1E1;
+        }
+    }
+}
+.table-statements{
+    thead{
+        th{
+            &:first-child{
+                width: 37%;
+            }
+        }
+    }
+    .btn-view{
+        min-width: 100px;
+        height: 44px;
+        padding: 10px;
+    }
+}
+.table-download{
+    margin-bottom: 34px;
+    thead{
+        th{
+            &:first-child{
+                width: 33%;
+            }
+            &:nth-child(2){
+                width: 15%;
+            }
+            width: 10%;
+        }
+    } 
+}
 .banner-improve {
 	background-image: url("../../../public/images/banner/banner-improve.jpg");
 	background-position: center;

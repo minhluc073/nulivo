@@ -4,6 +4,14 @@ import img3 from "/public/images/templates/item-63.jpg";
 import img4 from "/public/images/templates/item-31.jpg";
 import img5 from "/public/images/templates/item-33.jpg";
 import img6 from "/public/images/templates/item-59.jpg";
+import img7 from "/public/images/templates/item-13.jpg";
+import img8 from "/public/images/templates/item-29.jpg";
+import img9 from "/public/images/templates/item-80.jpg";
+import img10 from "/public/images/templates/item-27.jpg";
+import img11 from "/public/images/templates/item-60.jpg";
+
+
+
 
 import avt from "/public/images/avatar/avt-1.jpg";
 
@@ -119,7 +127,324 @@ export const dataSelling = [
   },
 ];
 
+export const dataManage = [
+  {
+    id: 1,
+    img:img1,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Draft",
+    edit: "/edit-item"
+  },
+  {
+    id: 2,
+    img:img2,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Draft",
+    edit: "/edit-item"
+  },
+  {
+    id: 3,
+    img:img3,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 4,
+    img:img4,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 5,
+    img:img7,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 6,
+    img:img5,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 7,
+    img:img11,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 8,
+    img:img9,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 9,
+    img:img8,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  },
+  {
+    id: 10,
+    img:img11,
+    name:"Product management tools PowerPoint template",
+    manageId: 740,
+    price: "$12",
+    featured: "Make featured",
+    status: "Active",
+    edit: "/edit-item"
+  }
+]
 
+export const dataDownload = [
+  {
+    id: 1,
+    img:img1,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 2,
+    img:img2,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 3,
+    img:img3,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 4,
+    img:img4,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 5,
+    img:img7,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 6,
+    img:img5,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 7,
+    img:img11,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 8,
+    img:img9,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 9,
+    img:img8,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  },
+  {
+    id: 10,
+    img:img11,
+    name:"Product management tools PowerPoint template",
+    price: "$12",
+    date: "May 31, 2015",
+    licence: "Regular Price",
+    author: "Artvan"
+  }
+]
+
+export const dataStatements = [
+  {
+    id: 1,
+    img:img1,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 2,
+    img:img2,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 3,
+    img:img3,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 4,
+    img:img7,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 5,
+    img:img5,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 6,
+    img:img8,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 7,
+    img:img9,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 8,
+    img:img3,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 9,
+    img:img10,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+  {
+    id: 10,
+    img:img11,
+    name: "Product management tools PowerPoint template",
+    orderID: "5fd5b5da1c16e7ce447d",
+    date: "May 6, 2012",
+    status: "Complete",
+    buyer: "jackieoconnor08",
+    price: "$6",
+    earnings: "$3",
+    link: "#"
+  },
+]
 
 export const dataPayoutHistory = [
   {
