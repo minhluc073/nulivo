@@ -118,3 +118,48 @@ export const dataSelling = [
     like: 3.801,
   },
 ];
+
+
+
+export const dataPayoutHistory = [
+  {
+    id: 1,
+    amount: "$2,000",
+    method: "Paypal",
+    paymentID: "willie.jennings@example.com",
+    status: "Pending",
+    date: "2024-05-03 08:14:01",
+  },
+  {
+    id: 2,
+    amount: "$1,000",
+    method: "Paypal",
+    paymentID: "nevaeh.simmons@example.com",
+    status: "Pending",
+    date: "2024-05-02 07:10:15",
+  },
+  {
+    id: 3,
+    amount: "$9,450",
+    method: "Paypal",
+    paymentID: "dolores.chambers@example.com",
+    status: "Pending",
+    date: "2024-05-04 09:18:16",
+  },
+  {
+    id: 4,
+    amount: "$7,000",
+    method: "Paypal",
+    paymentID: "jackson.graham@example.com",
+    status: "Pending",
+    date: "2024-05-06 11:24:08",
+  },
+  {
+    id: 5,
+    amount: "$4,400",
+    method: "Paypal",
+    paymentID: "michelle.rivera@example.com",
+    status: "Pending",
+    date: "2024-05-05 10:21:13",
+  },
+]

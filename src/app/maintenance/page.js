@@ -16,7 +16,7 @@ export default function Maintenance() {
 
     return (
         <>
-            <Layout>
+            <Layout loggedIn>
                 <div className="flat-breadcrumb">
                     <div className="container">
                         <div className="breadcrumb">

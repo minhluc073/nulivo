@@ -18,7 +18,7 @@ export default function RankingSection(){
                 </div>
                 <div className="wrap-ranking">
                     <div className="table-responsive">
-                        <table className="table-ranking">
+                        <table className="table-default">
                             <thead>
                                 <tr>
                                     <th>No</th>

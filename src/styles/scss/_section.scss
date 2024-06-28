@@ -465,11 +465,11 @@
 
 // table  ranking
 .wrap-ranking {
-	border-radius: 14px;
-	overflow: hidden;
-	border: 1px solid #eeeeee;
+	// border-radius: 14px;
+	// overflow: hidden;
+	// border: 1px solid #eeeeee;
 }
-.table-ranking {
+.table-default{
 	thead {
 		tr {
 			background-color: #f9f4ff;
@@ -483,6 +483,11 @@
 			color: var(--black-1);
 			&:first-child {
 				width: 13%;
+				border-top-left-radius: 14px;
+			}
+			&:last-child {
+				width: 13%;
+				border-top-right-radius: 14px;
 			}
 		}
 	}
@@ -490,13 +495,32 @@
 		td {
 			padding: 22px 20px 22px 30px;
 			align-content: center;
+			border-bottom: 1px solid #eeeeee;
 		}
 		tr {
-			&:not(:last-child) {
-				td {
-					border-bottom: 1px solid #eeeeee;
+			td{
+				&:first-child{
+					border-left: 1px solid #eeeeee;
+				}
+				&:last-child{
+					border-right: 1px solid #eeeeee;
 				}
 			}
+			&:last-child{
+				td{
+					&:first-child{
+						border-bottom-left-radius: 14px;
+					}
+					&:last-child{
+						border-bottom-right-radius: 14px;
+					}
+				}
+			}
+			// &:not(:last-child) {
+			// 	td {
+			// 		border-bottom: 1px solid #eeeeee;
+			// 	}
+			// }
 		}
 	}
 	.author-box {
@@ -505,6 +529,18 @@
 		gap: 6px;
 		img {
 			border-radius: 50%;
+		}
+	}
+
+
+	.status{
+		padding: 0px 21px;
+		border-radius: 999px;
+		line-height: 26px;
+		display: inline-block;
+		&.pending{
+			background-color: rgba(194, 163, 0, 0.3);
+			color: #644800;
 		}
 	}
 }

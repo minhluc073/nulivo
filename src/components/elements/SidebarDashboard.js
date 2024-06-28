@@ -39,6 +39,9 @@ export default function SidebarDashboard() {
 					<li className={`nav-menu-item ${pathname === '/become-author-dashboard' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/become-author-dashboard"><span className="icon icon-briefcase" /> Become an author</Link>
 					</li>
+					<li className={`nav-menu-item ${pathname === '/verify-1' ? 'active' : ''}`}>
+						<Link className="nav-menu-link" href="/verify-1"><span className="icon icon-comment-user" /> Verify account</Link>
+					</li>
 					<li className={`nav-menu-logout ${pathname === '/' ? 'active' : ''}`}>
 						<div className='nav-menu-item'>
 							<Link className="nav-menu-link" href="/"><span className="icon icon-sign-out" /> Logout</Link>

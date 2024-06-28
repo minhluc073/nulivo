@@ -25,7 +25,7 @@ export default function Ranking() {
             <div className="container">
                 <div className="wrap-ranking">
                     <div className="table-responsive">
-                        <table className="table-ranking">
+                        <table className="table-default">
                             <thead>
                                 <tr>
                                     <th>No</th>

@@ -76,7 +76,7 @@ export default function VerifyAccount2() {
 
     return (
         <>
-            <Layout>
+            <Layout loggedIn>
                 <PageTitle title="Verify account" />
                 <div className="flat-breadcrumb">
                     <div className="container">

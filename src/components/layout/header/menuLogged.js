@@ -9,7 +9,7 @@ const menuLogged = [
     id: 2,
     icon: "icon-account-line-3",
     text: "Profile",
-    link: "/profile",
+    link: "/profile-setting",
   },
   {
     id: 3,

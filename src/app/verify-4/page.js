@@ -8,7 +8,7 @@ export default function VerifyAccount4() {
 
     return (
         <>
-            <Layout>
+            <Layout loggedIn>
                 <PageTitle title="Verify account" />
                 <div className="flat-breadcrumb">
                     <div className="container">

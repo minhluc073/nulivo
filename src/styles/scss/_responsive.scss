@@ -384,6 +384,13 @@
             display: none;
         }
     }
+    .layout-wrap{
+        .main-content-inner{
+            .group-ip-3{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
@@ -403,8 +410,12 @@
             flex-wrap: wrap;
         }
     }
-    .card-verify{
-        
+    .layout-wrap{
+        .main-content-inner{
+            .group-ip-2{
+                grid-template-columns: 1fr;
+            }
+        }
     }
     
 }

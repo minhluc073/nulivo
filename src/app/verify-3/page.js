@@ -9,7 +9,7 @@ export default function VerifyAccount3() {
 
     return (
         <>
-            <Layout>
+            <Layout loggedIn>
                 <PageTitle title="Verify account" />
                 <div className="flat-breadcrumb">
                     <div className="container">
