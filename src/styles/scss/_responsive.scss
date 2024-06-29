@@ -83,6 +83,10 @@
             line-height: 48px;
         }
     }
+    .flat-earning-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 @media only screen and (min-width: 1150px) {
     .banner-page-title {
@@ -394,6 +398,14 @@
     .file-upload-item .box-upload-item{
         padding: 30px;
     }
+    .flat-earning-wrap{
+        .earning-item{
+            .value-earing{
+                position: unset;
+                transform: unset;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
@@ -423,7 +435,7 @@
             }
         }
     }
-    
+   
     
 }
 

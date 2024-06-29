@@ -230,6 +230,70 @@ export const dataManage = [
   }
 ]
 
+export const dataStatistical = [
+  {
+    id: 1,
+    date: "May 6, 2012",
+    sales: 583,
+    earnings: "$9,450"
+  },
+  {
+    id: 2,
+    date: "August 2, 2013",
+    sales: 600,
+    earnings: "$1,000"
+  },
+  {
+    id: 3,
+    date: "October 24, 2018",
+    sales: 177,
+    earnings: "$1,000"
+  },
+  {
+    id: 4,
+    date: "May 20, 2015",
+    sales: 185,
+    earnings: "$7,000"
+  },
+  {
+    id: 5,
+    date: "November 16, 2014",
+    sales: 429,
+    earnings: "$7,750"
+  },
+  {
+    id: 6,
+    date: "February 11, 2014",
+    sales: 647,
+    earnings: "$2,700"
+  },
+  {
+    id: 7,
+    date: "September 9, 2013",
+    sales: 536,
+    earnings: "$3,250"
+  },
+  {
+    id: 8,
+    date: "May 29, 2017",
+    sales: 274,
+    earnings: "$2,000"
+  },
+  {
+    id: 9,
+    date: "December 29, 2012",
+    sales: 130,
+    earnings: "$4,750"
+  },
+  {
+    id: 10,
+    date: "July 14, 2015",
+    sales: 561,
+    earnings: "$4,000"
+  },
+]
+
+
 export const dataDownload = [
   {
     id: 1,
