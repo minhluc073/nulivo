@@ -21,7 +21,7 @@ export default function SidebarDashboard() {
 					<li className={`nav-menu-item ${pathname === '/download' ? 'active' : ''}`}>
 						<Link className="nav-menu-link" href="/download"><span className="icon icon-download" />Downloads</Link>
 					</li>
-					<li className={`nav-menu-item ${pathname === '/manage-items' ? 'active' : ''}`}>
+					<li className={`nav-menu-item ${pathname === '/manage-items' || pathname ==='/manage-items/edit-item'  ? 'active' : ''} `}>
 						<Link className="nav-menu-link" href="/manage-items"><span className="icon icon-manage" /> Manage items</Link>
 					</li>
 					<li className={`nav-menu-item ${pathname === '/upload-items' ? 'active' : ''}`}>

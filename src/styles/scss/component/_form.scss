@@ -135,7 +135,7 @@
     border: 1px solid var(--black-2);
     @include flex(center, center);
     &:checked {
-        border-color: var(--primary);
+        border-color: var(--primary) !important;
 
         &::before {
             opacity: 1;
@@ -151,9 +151,10 @@
         background-color: var(--primary);
         opacity: 0;
     }
-    &:focus{
-        border-color: var(--black-2);
-        
+
+    &.style-2{
+        border-color: var(--grey-3);
+       
     }
 }
 

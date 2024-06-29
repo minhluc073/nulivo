@@ -21,7 +21,7 @@ const countrySelect = [
       label: "Japan",
     },
     {
-      value: "v3",
+      value: "v4",
       label: "Viet Nam",
     },
   ];
@@ -40,7 +40,7 @@ const countrySelect = [
       label: "Tokyo",
     },
     {
-      value: "v3",
+      value: "v4",
       label: "HCM",
     },
   ];

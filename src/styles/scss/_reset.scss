@@ -203,7 +203,7 @@ input[type="color"] {
 	font-weight: 400;
 	border: 1px solid var(--line-2);
 	background-color: var(--white);
-	@include transition3;
+	// @include transition3;
 	color: var(--black-2);
 	&:focus {
 		border-color: var(--line-2);
@@ -233,7 +233,7 @@ input[type="radio"]{
 	height: 22px;
 }
 
-input{
+input, textarea{
 	&.ip-fill{
 		background-color: var(--white);
 		&:valid{
@@ -258,7 +258,7 @@ textarea {
 }
 button:not(.icon, .accordion-button) {
 	font-family: var(--poppins);
-	padding: 14px 34.5px;
+	padding: 13px 34.5px;
 	color: var(--white);
 	font-size: 14px;
 	line-height: 20px;
@@ -504,6 +504,9 @@ tr{
 }
 .text_grey-1{
 	color: #7C818B;
+}
+.text_grey-2{
+	color: #7B7B7B;
 }
 .text_blue {
 	color: var(--blue);

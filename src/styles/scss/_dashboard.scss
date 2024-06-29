@@ -16,6 +16,10 @@
         .h7{
             color: var(--black-3);
         }
+        .h9{
+            color: var(--black-3);
+            line-height: 19.8px;
+        }
         .title{
             margin-bottom: 26px;
         }
@@ -27,7 +31,18 @@
                 margin-bottom: 30px;
             }
            
+           .list-check-file{
+                margin-top: 18px;
+                .item{
+                    &:not(:last-child){
+                        margin-bottom: 10px;
+                    }
+                }
+           }
         }
+        .text-sub{
+            margin-top: 12px;
+       }
         .label{
             margin-bottom: 12px;
             font-weight: 600;
@@ -43,9 +58,69 @@
             gap: 30px;
             grid-template-columns: 1fr 1fr 1fr;
         }
+        .tag-check{
+            min-width: 112px;
+        }
+        .group-file-upload{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+    }
+}
+.tox{
+    &.tox-tinymce{
+        border: 1px solid var(--line-2);
+        .tox-tbtn{
+            border: 1px solid var(--line-2);
+        }
+        .tox-statusbar{
+            display: none;
+        }
+        .tox-edit-area::before{
+            border: none;
+        }
+        .tox-tbtn--bespoke {
+            background: #fff;
+        }
+        .tox-editor-header{
+            box-shadow: unset !important;
+        }
+        
+    }
+}
+#tinymce {
+    margin: 0 10px;
+    p{
+        margin: 0;
     }
 }
 
+
+.file-upload-item{
+    .box-upload-item{
+        padding: 42px 30px;
+        border: 2px dashed #E2E2E2;
+        text-align: center;
+        border-radius: 16px;
+        .box-btn-file{
+            position: relative;
+            display: inline-block;
+            .tf-btn{
+                min-width: 196px;
+            }
+            input{ 
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+            } 
+        }
+        p{
+            margin-top: 15px;
+        }
+    }
+    
+}
 
 .sidebar-menu-dashboard {
     width: 300px;

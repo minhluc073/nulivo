@@ -391,6 +391,9 @@
             }
         }
     }
+    .file-upload-item .box-upload-item{
+        padding: 30px;
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
@@ -415,8 +418,12 @@
             .group-ip-2{
                 grid-template-columns: 1fr;
             }
+            .group-file-upload{
+                grid-template-columns: 1fr;
+            }
         }
     }
+    
     
 }
 

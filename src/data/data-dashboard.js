@@ -136,7 +136,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Draft",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 2,
@@ -146,7 +146,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Draft",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 3,
@@ -156,7 +156,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 4,
@@ -166,7 +166,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 5,
@@ -176,7 +176,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 6,
@@ -186,7 +186,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 7,
@@ -196,7 +196,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 8,
@@ -206,7 +206,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 9,
@@ -216,7 +216,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   },
   {
     id: 10,
@@ -226,7 +226,7 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/edit-item"
+    edit: "/manage-items/edit-item"
   }
 ]
 
