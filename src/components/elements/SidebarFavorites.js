@@ -2,15 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function SidebarProfile(){
+
+export default function SidebarFavorites(){
     return(
-        <aside className="sidebar-profile-wrap fixed-sidebar">
+        <aside className="sidebar-profile-wrap fixed-sidebar sidebar-favorite">
             <div className="box">
-                <div className="box-title">
-                    <div className="h8 text_black-3">SlideScan</div>
-                    <span className="text-7">2.384 folower</span>
+                <div className="box-profile">
+                    <div className="avatar-check">
+                        <div className="avatar round">
+                            <Image
+                              src="/images/avatar/avt-line.png"
+                              width={120}
+                              height={120}
+                              alt="avatar"
+                            />
+                        </div>
+                        <div className="check">
+                            <span className="icon icon-check"></span>
+                        </div>
+                    </div>
+                    <div className="content">
+                        <div className="h8 mb-6">Themesflat</div>
+                        <span className="text-7">@Themesflat</span>
+                    </div>
                 </div>
-                <Link href="#" className="tf-btn btn-line w-100">Follow</Link>
                 <ul className="list-count">
                     <li className="item">
                         <div className="h9 count mb-6">172</div>
@@ -25,10 +40,6 @@ export default function SidebarProfile(){
                         <span className="text-7">Avg Rating</span>
                     </li>
                 </ul>
-                <div>
-                    <div className="text-title-1 mb-10">Bio</div>
-                    <p>Easy to use: Our templates are designed to be simple, easy to edit, and suitable for all levels of PowerPoint experience.</p>
-                </div>
             </div>
             <div className="box">
                 <div className="text-title-1 mb-10">Badges</div>

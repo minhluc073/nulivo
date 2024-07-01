@@ -196,3 +196,19 @@
         } 
     }
 }
+
+.btn-social{
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--line-2);
+    box-sizing: border-box;
+    gap: 10px;
+    .icon{
+        width: 22px;
+        height: 22px;
+    }
+    &:hover{
+        background-color: var(--white);
+        border: 1px solid var(--line-2);
+    }
+}

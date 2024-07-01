@@ -3,13 +3,13 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import { Dropdown } from 'react-bootstrap';
 import { useState } from "react";
-import BannerProfile from "@/components/sections/Banner-profile";
 import TemplateItem from "@/components/elements/TemplateItem";
 import Pagination from "@/components/elements/Pagination";
 import { dataRecent3 } from "@/data/data-template-recent";
-import SidebarProfile from "@/components/elements/SidebarProfile";
+import SidebarFavorites from "@/components/elements/SidebarFavorites";
 
-export default function UserProfile(){
+
+export default function Favorites(){
 
     const [selectSort, setSelectSortby] = useState('');
     const [selectShow, setSelectShow] = useState('');
@@ -22,7 +22,7 @@ export default function UserProfile(){
         }
       };
 
-    return(
+    return (
         <>
             <Layout>
                 <div className="flat-breadcrumb">
@@ -37,16 +37,15 @@ export default function UserProfile(){
                         </div>
                     </div>
                 </div>
-                <BannerProfile/>
-                <div className="flat-spacing-1 pt-0">
+                <div className="flat-spacing-1">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-3"><SidebarProfile/></div>
+                            <div className="col-lg-3"><SidebarFavorites/></div>
                             <div className="col-lg-9">
                                 <div className="meta-select-filter style-2">
                                     <div className="d-flex gap-10 flex-wrap">
-                                        <span className="tag active">All Templates (1.247)</span>
-                                        <span className="tag">Favorites list (442)</span>
+                                        <span className="tag">All Templates (1.247)</span>
+                                        <span className="tag active">Favorites list (442)</span>
                                     </div>
                                     <div className="group-select-filter">
                                         <div className="dropdown-select">
@@ -94,6 +93,5 @@ export default function UserProfile(){
                 </div>
             </Layout>
         </>
-
     )
 }

@@ -87,6 +87,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .flat-account-wrapper{
+        display: flex;
+	    height: 100%;
+        .banner-left{
+            width: 48.4%;
+        }
+        .content-right{
+            padding: 40px;
+            width: 51.6%;
+            
+        }
+    }
 }
 @media only screen and (min-width: 1150px) {
     .banner-page-title {
@@ -109,6 +122,10 @@
     .card-box-3{
         padding: 60px;
     }
+    .flat-form-account{
+        margin-left: -100px;
+    }
+
 }
 
 // max-width:
@@ -239,9 +256,14 @@
             position: unset;
         }
     }
-   
+    .sidebar-profile-wrap{
+        .list-badge{
+            flex-wrap: wrap;
+        }
+    }
 }
 @media only screen and (max-width: 1149px) {
+
 }
 @media only screen and (max-width: 991px) {
     h1,
@@ -406,6 +428,28 @@
             }
         }
     }
+    .sidebar-profile-wrap {
+        margin-bottom: 30px;
+    }
+    .banner-profile{
+        .avatar-check{
+            width: 80px;
+            height: 80px;
+            bottom: -12%;
+            .avatar{
+                width: 70px;
+                height: 70px;
+            }
+            .check{
+                width: 28px;
+                height: 28px;
+                right: -6px;
+            }
+        }
+    }
+    .flat-banner-profile{
+        padding: 60px 0px 80px;
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
@@ -489,6 +533,11 @@
         flex-wrap: wrap;
         .tf-btn{
             width: 100%;
+        }
+    }
+    .flat-form-account{
+        .group-2{
+            flex-wrap: wrap;
         }
     }
 }
