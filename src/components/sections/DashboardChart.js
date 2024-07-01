@@ -1,7 +1,12 @@
 "use client";
+import * as React from "react";
 import Chart from "react-apexcharts";
 
 export default function DashboardChart() {
+  React.useEffect(() => {
+    // window is accessible here.
+    console.log("window.innerHeight", window.innerHeight);
+  }, []);
   const data = [
     {
       name: "series-1",
