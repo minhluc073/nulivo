@@ -13,10 +13,14 @@ import img12 from "/public/images/templates/item-55.jpg"
 import img13 from "/public/images/templates/item-36.jpg"
 import img14 from "/public/images/templates/item-56.jpg"
 import img15 from "/public/images/templates/item-57.jpg"
-
-
-
-
+import img16 from "/public/images/templates/item-59.jpg"
+import img17 from "/public/images/templates/item-29.jpg"
+import img18 from "/public/images/templates/item-23.jpg"
+import img19 from "/public/images/templates/item-81.jpg"
+import img20 from "/public/images/templates/item-28.jpg"
+import img21 from "/public/images/templates/item-27.jpg"
+import img22 from "/public/images/templates/item-63.jpg"
+import img23 from "/public/images/templates/item-1.jpg"
 
 
 import avt from "/public/images/avatar/avt-1.jpg";
@@ -209,6 +213,141 @@ export const dataRecent2 = [
     avt: avt,
     name: "Themesflat",
     price: "$27",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+];
+
+export const dataRecent3 = [
+  {
+    id: 1,
+    img: img13,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 2,
+    img: img16,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 3,
+    img: img17,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 4,
+    img: img18,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 5,
+    img: img19,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 6,
+    img: img3,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 7,
+    img: img20,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 8,
+    img: img21,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 9,
+    img: img22,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 10,
+    img: img23,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 11,
+    img: img14,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
+    rate: 4.5,
+    sale: 209,
+    like: 3.801,
+  },
+  {
+    id: 12,
+    img: img11,
+    link: "/item-single-free",
+    title: "PowerPoint Presentation Template",
+    avt: avt,
+    name: "Themesflat",
     rate: 4.5,
     sale: 209,
     like: 3.801,
