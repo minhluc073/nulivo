@@ -1,78 +1,111 @@
+"use client";
+import Chart from "react-apexcharts";
 
+export default function DashboardChart() {
+  const data = [
+    {
+      name: "series-1",
+      data: [
+        3.2, 3.2, 2.2, 3, 2.9, 3, 4.7, 4, 5, 7.8, 9, 5.8, 4.2, 3, 5, 2.9, 4,
+        2.8, 5, 3,
+      ],
+    },
+  ];
 
-'use client'
-import 'chart.js/auto'
-import { Line } from "react-chartjs-2"
-
-
-export default function DashboardChart(){
-
-    const data = {
-        labels: [
-            "4 Jan",
-            "5 Jan",
-            "6 Jan",
-            "7 Jan",
-            "8 Jan",
-            "9 Jan",
-            "10 Jan",
-            "11 Jan",
-            "12 Jan",
-            "13 Jan",
-            "14 Jan",
-            "15 Jan",
-        ],
-        datasets: [
-            {
-                fill: true,
-                label: `$ Sales Overview`,
-                backgroundColor: "transparent",
-                borderColor: "#ED2027",
-                data: [0, 105, 92, 155, 138, 205, 120, 92, 155, 138, 205, 320],
-                lineTension: 0,
-                pointRadius: 2,
-                borderWidth: 3,
-            },
-            // {
-            //     label: "Facebook",
-            //     backgroundColor: "rgba(0, 138, 255, 0.5)",
-            //     borderColor: "transparent",
-            //     data: lineData.youtube,
-            //     lineTension: 0,
-            //     // borderDash: [10, 5],
-            //     borderWidth: 1,
-            //     pointRadius: 0,
-            // },
-        ],
-    }
-
-    const options = {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-            legend: {
-                display: false,
-            }
+  const options = {
+    xaxis: {
+      categories: [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+      ],
+    },
+    yaxis: {
+      labels: {
+        formatter: function (value) {
+          return value;
         },
-        scales: {
-            x: {
-                grid: {
-                    display: true,
-                    drawBorder: false,
-                    color: "rgba(0,0,0,0.05)"
-                }
-            },
-            y: {
-                grid: {
-                    display: false,
-                    drawBorder: false,
-                }
-            },
+      },
+    },
+    colors: ["#450D87", "#fff"],
+
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "smooth",
+    },
+    fill: {
+      type: "gradient",
+      gradient: {
+        shade: "light",
+        type: "vertical",
+        opacityFrom: 0.5,
+        opacityTo: 0.3,
+      },
+    },
+    chart: {
+      toolbar: {
+        show: false,
+        //   tools: {
+        //     download: false,
+        //   },
+      },
+    },
+
+    responsive: [
+      {
+        breakpoint: 767,
+        options: {
+          chart: {
+            height: 300,
+          },
+          legend: {
+            position: "bottom",
+          },
         },
-    }
+      },
+    ],
+  };
 
-
-    return (
-        <><Line data={data} height={500} options={options} id="lineChart" /></>
-    )
+  return (
+    <>
+      <Chart
+        series={data}
+        width={"100%"}
+        height={500}
+        options={options}
+        id="lineChart"
+        type="area"
+      />
+    </>
+  );
 }

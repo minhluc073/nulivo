@@ -1,4 +1,4 @@
-import "/public/fonts/font-icons.css";
+import "/public/fonts/style.css";
 import "@/styles/css/swiper-bundle.min.css";
 import "@/styles/scss/app.scss";
 import { Inter, Poppins } from "next/font/google";
@@ -27,7 +27,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} ${inter.variable}`}>{children}</body>
+      <body className={`${poppins.variable} ${inter.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
