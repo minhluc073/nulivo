@@ -36,7 +36,7 @@ const swiperOptions = {
 
 export default function Featured() {
   return (
-    <section className="flat-feature flat-spacing-1">
+    <section className="flat-feature flat-spacing-1 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
       <div className="container">
         <div className="flat-title d-flex align-items-center justify-content-between">
           <h4>Featured Items</h4>

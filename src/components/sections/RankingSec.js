@@ -6,7 +6,7 @@ export default function RankingSection(){
 
         <div className="flat-spacing-1">
             <div className="container">
-                <div className="flat-title d-flex align-items-center justify-content-between gap-15 flex-wrap">
+                <div className="flat-title d-flex align-items-center justify-content-between gap-15 flex-wrap wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                     <div className="box-left">
                         <h4 className="title">Ranking</h4>
                         <p className="text_black-1 sub-title">Ranking of Nulivo Market Top Authors</p>
@@ -16,7 +16,7 @@ export default function RankingSection(){
                         <i className="icon icon-arr-right"></i>
                     </Link>
                 </div>
-                <div className="wrap-ranking">
+                <div className="wrap-ranking wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                     <div className="table-responsive">
                         <table className="table-default">
                             <thead>

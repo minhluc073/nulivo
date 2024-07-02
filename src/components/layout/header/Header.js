@@ -40,7 +40,7 @@ export default function Header({ scroll, loggedIn, handleShowMb }) {
                   <Dropdown.Item>Mockups</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
-              <form className="box-search">
+              <form className="box-search" action="/search-result">
                 <input type="text" placeholder="Search for assets..." />
                 <button type="submit" className="icon icon-search"></button>
               </form>

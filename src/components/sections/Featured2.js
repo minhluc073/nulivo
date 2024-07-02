@@ -53,11 +53,11 @@ export default function Featured2() {
   return (
     <section className="flat-feature-v2 flat-spacing-1">
       	<div className="container">
-	  	<div className="flat-title-v2 text-center">
+	  	<div className="flat-title-v2 text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
             <h2 className="text-gradient-1">Featured creator</h2>
             <p className="sub-title text_black-1">Every week, we will select and honor one author with the highest sales volume and the highest quality.</p>
         </div>
-		<Swiper {...swiperOptions} className="swiper tf-sw-feature-v2">
+		<Swiper {...swiperOptions} className="swiper tf-sw-feature-v2 wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
 			<div className="swiper-wrapper">
 				<SwiperSlide>
 					<div className="creator-item">

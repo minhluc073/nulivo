@@ -402,6 +402,14 @@
 		border: 1px solid var(--line);
 		@include flex(center, center);
 	}
+	.count-item{
+		span{
+			font-size: 14px;
+			line-height: 15.4px;
+			color: #7b7b7b;
+			display: inline-block;
+		}
+	}
 }
 .box-profile {
 	display: flex;
@@ -2281,4 +2289,24 @@
 
 	}
 
+}
+.back-top{
+	opacity: 1;
+    visibility: visible;
+	position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 100;
+    transition: all .4s linear;
+    background: var(--primary);
+	@include flex(center, center);
+	.icon{
+		transform: rotate(180deg);
+		font-size: 16px;
+		color: var(--white);
+	}
 }

@@ -21,13 +21,13 @@ const menuLogged = [
     id: 4,
     icon: "icon-download",
     text: "Downloads",
-    link: "/downloads",
+    link: "/download",
   },
   {
     id: 5,
     icon: "icon-manage",
     text: "Manage items",
-    link: "/manage",
+    link: "/manage-items",
   },
   {
     id: 6,
@@ -57,13 +57,13 @@ const menuLogged = [
     id: 10,
     icon: "icon-briefcase",
     text: "Become an author",
-    link: "/become-author",
+    link: "/become-author-dashboard",
   },
   {
     id: 11,
     icon: "icon-comment-user",
     text: "Verify account",
-    link: "/verify-account",
+    link: "/verify-1",
   },
 ];
 

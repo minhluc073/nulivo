@@ -78,7 +78,7 @@ export default function SignUp(){
     const [confirmPass, setConfirmPass] = useState(false);
 
     return (
-        <div className="flat-account-wrapper">
+        <div className="flat-account-wrapper flat-account-signup">
             <div className="banner-left">
                 <div className="logo">
                     <Image src={logo} width={54} height={35} alt="logo"/>

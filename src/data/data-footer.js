@@ -47,7 +47,7 @@ const dataFooter = [
             {
                 id: 2,
                 text: 'Blog',
-                link: '#'
+                link: '/blog'
             },
             {
                 id: 3,
@@ -57,12 +57,12 @@ const dataFooter = [
             {
                 id: 4,
                 text: 'Become an Author',
-                link: '#'
+                link: '/become-an-author'
             },
             {
                 id: 5,
                 text: 'Authors',
-                link: '#'
+                link: '/user-profile'
             },
         ]
     },

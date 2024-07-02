@@ -21,9 +21,9 @@ export default function Banner() {
       <Image src={imgBanner} alt="img-banner" />
       <div className="banner-content">
         <div className="box-content">
-            <h2 className="title">{title}</h2>
-            <p className="subtitle">{desc[0]?.text}</p>
-            <p className="subtitle">
+            <h2 className="title wow fadeIn" data-wow-delay=".2s" data-wow-duration="2000ms">{title}</h2>
+            <p className="subtitle wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">{desc[0]?.text}</p>
+            <p className="subtitle wow fadeIn" data-wow-delay=".4s" data-wow-duration="2000ms">
               <i className={`icon ${desc[1]?.icon}`}></i>
               {desc[1]?.text}
             </p>

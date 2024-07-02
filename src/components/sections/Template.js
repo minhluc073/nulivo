@@ -44,14 +44,14 @@ export default function Template(){
     return (
         <section className="flat-template flat-spacing-2 pt-0">
             <div className="container">
-                <div className="flat-title-v2 text-center">
+                <div className="flat-title-v2 text-center wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
                     <h2>
                         <span className="fw-light text_black-1">Explore all of our latest</span> <br/>
                         <span className="text-gradient-1">Slide templates, Fonts, and Mockups</span>
                     </h2>
                     <p className="sub-title text_black-1">We carefully review each new submission from our community to ensure they meet our design standards.</p>
                 </div>
-                <div className="flat-tab wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+                <div className="flat-tab">
                     <Tab.Container defaultActiveKey={dataNav[0]?.navKey}>
                         <Nav className="nav-tab-template">
                             {
