@@ -19,7 +19,7 @@ export const dataPublishedFiles = [
     {
         id: 1,
         img: img1,
-        link: "#",
+        link: "/item-single",
         title: "Product management tools PowerPoint template",
         download: 740,
         price: "$12",
@@ -29,7 +29,7 @@ export const dataPublishedFiles = [
       {
         id: 2,
         img: img2,
-        link: "#",
+        link: "/item-single",
         title: "Product management tools PowerPoint template",
         download: 740,
         price: "$12",
@@ -39,7 +39,7 @@ export const dataPublishedFiles = [
       {
         id: 3,
         img: img3,
-        link: "#",
+        link: "/item-single",
         title: "Product management tools PowerPoint template",
         download: 740,
         price: "$12",
@@ -49,7 +49,7 @@ export const dataPublishedFiles = [
       {
         id: 4,
         img: img4,
-        link: "#",
+        link: "/item-single",
         title: "Product management tools PowerPoint template",
         download: 740,
         price: "$12",
@@ -59,7 +59,7 @@ export const dataPublishedFiles = [
       {
         id: 5,
         img: img5,
-        link: "#",
+        link: "/item-single",
         title: "Product management tools PowerPoint template",
         download: 740,
         price: "$12",
@@ -136,7 +136,8 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Draft",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
   },
   {
     id: 2,
@@ -146,7 +147,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Draft",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 3,
@@ -156,7 +159,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 4,
@@ -166,7 +171,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 5,
@@ -176,7 +183,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 6,
@@ -186,7 +195,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 7,
@@ -196,7 +207,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 8,
@@ -206,7 +219,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 9,
@@ -216,7 +231,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   },
   {
     id: 10,
@@ -226,7 +243,9 @@ export const dataManage = [
     price: "$12",
     featured: "Make featured",
     status: "Active",
-    edit: "/manage-items/edit-item"
+    edit: "/manage-items/edit-item",
+    link: "/item-single"
+
   }
 ]
 
@@ -302,7 +321,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 2,
@@ -311,7 +331,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 3,
@@ -320,7 +341,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 4,
@@ -329,7 +351,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 5,
@@ -338,7 +361,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 6,
@@ -347,7 +371,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 7,
@@ -356,7 +381,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 8,
@@ -365,7 +391,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 9,
@@ -374,7 +401,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   },
   {
     id: 10,
@@ -383,7 +411,8 @@ export const dataDownload = [
     price: "$12",
     date: "May 31, 2015",
     licence: "Regular Price",
-    author: "Artvan"
+    author: "Artvan",
+    link: "/item-single"
   }
 ]
 
@@ -398,7 +427,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 2,
@@ -410,7 +439,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 3,
@@ -422,7 +451,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 4,
@@ -434,7 +463,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 5,
@@ -446,7 +475,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 6,
@@ -458,7 +487,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 7,
@@ -470,7 +499,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 8,
@@ -482,7 +511,7 @@ export const dataStatements = [
     buyer: "jackieoconnor08",
     price: "$6",
     earnings: "$3",
-    link: "#"
+    link: "/item-single"
   },
   {
     id: 9,

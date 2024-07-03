@@ -26,7 +26,7 @@ export default function PublicFiles({ title, data}){
                                             <Link href={item?.link} className="banner-img">
                                                 <Image src={item?.img} alt="img-template" width={80} height={50}/>
                                             </Link>
-                                            <p className="title-template">{item?.title}</p>
+                                            <Link href={item?.link} className="title-template">{item?.title}</Link>
                                         </div>
                                     </td>
                                     <td>{item?.download}</td>

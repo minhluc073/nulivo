@@ -42,11 +42,11 @@ export default function Statements(){
                                         <tr key={item?.id} className="item">
                                             <td>
                                                 <div className="item-product d-flex gap-20">
-                                                    <div className="banner-img">
+                                                    <Link href={item?.link} className="banner-img">
                                                         <Image src={item?.img} alt="img-template" width={80} height={50}/>
-                                                    </div>
+                                                    </Link>
                                                     <div className="content">
-                                                        <p className="title-template">{item?.name}</p>
+                                                        <Link href={item?.link} className="title-template">{item?.name}</Link>
                                                         <p className="mt-6 text-3">Order ID:<span>{item?.orderID}</span></p>
                                                         <p className="mt-6 text-3">Date: <span>{item?.date}</span></p>
                                                     </div>

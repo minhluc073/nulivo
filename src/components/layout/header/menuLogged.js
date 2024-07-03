@@ -9,13 +9,13 @@ const menuLogged = [
     id: 2,
     icon: "icon-account-line-3",
     text: "Profile",
-    link: "/profile-setting",
+    link: "/user-profile",
   },
   {
     id: 3,
     icon: "icon-settings",
     text: "Setting",
-    link: "/setting",
+    link: "/profile-setting",
   },
   {
     id: 4,

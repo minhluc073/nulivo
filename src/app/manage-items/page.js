@@ -61,10 +61,10 @@ export default function ManageItems(){
                                         <tr key={item?.id} className="item file-delete">
                                             <td>
                                                 <div className="item-product d-flex gap-20">
-                                                    <div className="banner-img">
+                                                    <Link href={item?.link} className="banner-img">
                                                         <Image src={item?.img} alt="img-template" width={80} height={50}/>
-                                                    </div>
-                                                    <p className="title-template">{item?.name}</p>
+                                                    </Link>
+                                                    <Link href={item?.link} className="title-template">{item?.name}</Link>
                                                 </div>
                                             </td>
                                             <td>{item?.manageId}</td>

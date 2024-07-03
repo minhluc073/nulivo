@@ -80,9 +80,9 @@ export default function SignUp(){
     return (
         <div className="flat-account-wrapper flat-account-signup">
             <div className="banner-left">
-                <div className="logo">
+                <Link href="/" className="logo">
                     <Image src={logo} width={54} height={35} alt="logo"/>
-                </div>
+                </Link>
                 <Image className="banner" src={banner} width="100%" height="100%" alt="banner"/>
             </div>
             <div className="content-right">

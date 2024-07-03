@@ -34,10 +34,10 @@ export default function Header({ scroll, loggedIn, handleShowMb }) {
                   {selectCategories || "All Category"}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                  <Dropdown.Item>PowerPoint Diagrams</Dropdown.Item>
-                  <Dropdown.Item>Google slides</Dropdown.Item>
-                  <Dropdown.Item>Keynote</Dropdown.Item>
-                  <Dropdown.Item>Mockups</Dropdown.Item>
+                    <Dropdown.Item>PowerPoint Diagrams</Dropdown.Item>
+                    <Dropdown.Item>Google slides</Dropdown.Item>
+                    <Dropdown.Item>Keynote</Dropdown.Item>
+                    <Dropdown.Item>Mockups</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
               <form className="box-search" action="/search-result">

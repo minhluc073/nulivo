@@ -5,7 +5,7 @@ export default function WidgetCount({ cls }) {
   return (
     <div className={`${cls ? cls : "flat-counter"}`}>
       <div className="container">
-        <div className="widget-count wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration="2000ms">
+        <div className="widget-count">
           <div className="box-counter">
             <div className="top">
               <h3 className="count">

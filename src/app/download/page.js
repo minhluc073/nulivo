@@ -5,6 +5,7 @@ import Link from "next/link";
 import { dataDownload } from "@/data/data-dashboard";
 import Image from "next/image";
 import Pagination from "@/components/elements/Pagination";
+import ReactStars from "react-rating-stars-component";
 
 export default function Download() {
   return (
@@ -40,20 +41,20 @@ export default function Download() {
                   <tr key={item?.id} className="item">
                     <td>
                       <div className="item-product d-flex gap-20">
-                        <div className="banner-img">
+                        <Link href={item?.link} className="banner-img">
                           <Image
                             src={item?.img}
                             alt="img-template"
                             width={80}
                             height={50}
                           />
-                        </div>
-                        <p className="title-template">{item?.name}</p>
+                        </Link>
+                        <Link href={item?.link} className="title-template">{item?.name}</Link>
                       </div>
                     </td>
                     <td className="list-info">
                       <div className="item">
-                        <span className="text-6">date</span>
+                        <span className="text-6">Date</span>
                         <span className="d-block mt-2">{item?.date}</span>
                       </div>
                       <div className="item mt-12">
@@ -91,13 +92,16 @@ export default function Download() {
                       </Link>
                       <div className="d-flex gap-8 align-items-center">
                         <span className="text-title-1">Rating:</span>
-                        <div className="list-star">
-                          <span className="icon icon-star-2"></span>
-                          <span className="icon icon-star-2"></span>
-                          <span className="icon icon-star-2"></span>
-                          <span className="icon icon-star-2"></span>
-                          <span className="icon icon-star-2"></span>
-                        </div>
+                        <ReactStars
+                              classNames="star-item"
+                              count={5}
+                              size={14}
+                              emptyIcon={<i className="icon-star-2"></i>}
+                              fullIcon={<i className="icon-star-2"></i>}
+                              emptySymbol={<i className="icon-star-2"></i>}
+                              color="#E1E1E1"
+                              activeColor="#FCB500"
+                            />
                       </div>
                     </td>
                   </tr>

@@ -55,17 +55,17 @@ export default function Cart() {
                     <tr className="item file-delete">
                         <td>
                             <div className="item-product">
-                                <div className="box-img">
+                                <Link href="/item-single" className="box-img">
                                 <Image
                                     src="/images/templates/item-59.jpg"
                                     alt="product"
                                     width={80}
                                     height={50}
                                 />
-                                </div>
-                                <p className="name">
+                                </Link>
+                                <Link href="/item-single" className="name">
                                 Product management tools PowerPoint <br /> template
-                                </p>
+                                </Link>
                             </div>
                         </td>
                         <td>
@@ -81,17 +81,17 @@ export default function Cart() {
                     <tr className="item file-delete">
                         <td>
                             <div className="item-product">
-                                <div className="box-img">
+                                <Link href="/item-single" className="box-img">
                                 <Image
                                     src="/images/templates/item-60.jpg"
                                     alt="product"
                                     width={80}
                                     height={50}
                                 />
-                                </div>
-                                <p className="name">
+                                </Link>
+                                <Link href="/item-single" className="name">
                                 Product management tools PowerPoint <br /> template
-                                </p>
+                                </Link>
                             </div>
                         </td>
                         <td>
@@ -107,17 +107,17 @@ export default function Cart() {
                     <tr className="item file-delete">
                         <td>
                             <div className="item-product">
-                                <div className="box-img">
+                                <Link href="/item-single" className="box-img">
                                 <Image
                                     src="/images/templates/item-29.jpg"
                                     alt="product"
                                     width={80}
                                     height={50}
                                 />
-                                </div>
-                                <p className="name">
+                                </Link>
+                                <Link href="/item-single" className="name">
                                 Product management tools PowerPoint <br /> template
-                                </p>
+                                </Link>
                             </div>
                         </td>
                         <td>

@@ -130,7 +130,36 @@
     }
 
 }
+@media only screen and (min-width: 1200px){
+    .sidebar-menu-dashboard{
+        .nav-menu-item{
+            .nav-menu-link{
+                &:hover{
+                    background-color: var(--primary);
+                    color: var(--white);
+                    font-weight: 700;
+                    .icon {
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+       .btn-hide-text{
+            &:hover{
+                background-color: var(--primary);
+                svg {
+                    g{
+                        opacity: 1;
+                    }
+                    path{
+                        fill: var(--white);
 
+                    }
+                }
+            }
+       }
+    }
+}
 // max-width:
 
 
@@ -209,7 +238,7 @@
         display: inline-block;
     }
     .sidebar-menu-dashboard{
-        padding: 30px;
+        padding: 16px;
         position: fixed;
         height: 100%;
         top: 0px;
@@ -240,6 +269,9 @@
                 visibility: visible;
                 transition: all .3s ease;
             }
+        }
+        .visible-nav-text{
+            padding: 16px;
         }
     }
     .overlay-dashboard {
@@ -453,6 +485,15 @@
     .flat-banner-profile{
         padding: 60px 0px 80px;
     }
+    .header {
+        .box-account {
+            gap: 10px;
+            .avt {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px){
     .box-about-text{
@@ -511,13 +552,7 @@
         font-size: 20px;
         line-height: 22px;
     }
-    .header {
-        .box-account {
-            .avt {
-                display: none;
-            }
-        }
-    }
+
     .flat-banner {
         .banner-content {
             .tf-btn {
