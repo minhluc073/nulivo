@@ -2,8 +2,13 @@
 import Image from "next/image";
 import avt from "/public/images/avatar/avt-1.jpg";
 import Link from "next/link";
+import { useState } from "react";
  
 export default function SidebarSingle({ free}){
+
+    const [isActive, setIsActive] = useState(false)
+    const handleActive= (()=> setIsActive(!isActive))
+
     return(
         <aside className="sidebar-single-wrap fixed-sidebar">
             <div className="box-title">
@@ -20,7 +25,7 @@ export default function SidebarSingle({ free}){
                         </div>
                         <span className="name">Themesflat</span>
                     </div>
-                    <span className="icon icon-heart-line"></span>
+                    <span className={`icon ${isActive ? 'active icon-heart': "icon-heart-line"}`} onClick={handleActive}></span>
                 </div>
             </div>
             <div className="box-price">
