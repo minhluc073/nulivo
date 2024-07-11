@@ -1,21 +1,27 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function TemplateItem(props) {
   const { item } = props;
+  const [isActive, setIsActive] = useState(false)
+    const handleActive= (()=> setIsActive(!isActive))
+
+
   return (
     <div className="template-box">
-      <Link href={item?.link} className="archive-banner">
-        <div className="image-banner">
+      <div  className="archive-banner">
+        <Link href={item?.link} className="image-banner">
           <Image
             src={item?.img}
             alt="image-template"
             width="100%"
             height="100%"
           />
-        </div>
-      </Link>
+        </Link>
+        <span className={`icon ${isActive ? 'active icon-heart': "icon-heart-line"}`} onClick={handleActive}></span>
+      </div>
       <div className="archive-content">
         <div className="content-top">
           <div className="title">

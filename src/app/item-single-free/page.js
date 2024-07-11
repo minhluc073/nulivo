@@ -3,7 +3,7 @@ import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import { useState } from "react";
 import TemplateItem from "@/components/elements/TemplateItem";
-import SidebarSingle from "@/components/elements/SidebarSingle";
+import SidebarSingleFree from "@/components/elements/SidebarSingleFree";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
@@ -620,7 +620,7 @@ export default function SingleItemFree() {
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="review">
-                        <div className="wrap-single-review">
+                        <form className="wrap-single-review">
                           <div className="box-rate-review">
                             <div className="heading">
                               <div className="title-rate-review">4.8</div>
@@ -682,6 +682,12 @@ export default function SingleItemFree() {
                               <span className="val-rate">0</span>
                             </div>
                           </div>
+                          <div className="field-review">
+                            <div className="fw-semibold title-font">
+                                Review
+                            </div>
+                            <textarea></textarea>
+                          </div>
                           <div className="box-rate-check">
                             <div className="fw-semibold title-font">
                               Rating *
@@ -697,10 +703,10 @@ export default function SingleItemFree() {
                               activeColor="#FCB500"
                             />
                           </div>
-                          <Link href="#" className="tf-btn w-100">
+                          <button className="tf-btn w-100">
                             Send comment
-                          </Link>
-                        </div>
+                          </button>
+                        </form>
                       </Tab.Pane>
                       <Tab.Pane eventKey="report">
                         <form className="wrap-single-report">
@@ -820,7 +826,7 @@ export default function SingleItemFree() {
                 </div>
               </div>
               <div className="col-lg-4">
-                <SidebarSingle free />
+                <SidebarSingleFree />
               </div>
             </div>
           </div>

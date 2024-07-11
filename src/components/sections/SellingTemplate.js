@@ -39,7 +39,7 @@ export default function SellingTemplate({title,data}) {
     <>
         <div className="h7 title">{title}</div>
         <div className="wrap-swiper">
-            <Swiper {...swiperOptions} className="swiper tf-sw-selling">
+            <Swiper {...swiperOptions} className="swiper tf-sw-feature">
                 <div className="swiper-wrapper">
                     {data.map((item) => (
                         <SwiperSlide key={item.id}>

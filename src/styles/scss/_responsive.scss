@@ -528,6 +528,13 @@
             display: none;
         }
     }
+    .flat-banner{
+        &.banner-v1{
+            .banner-content{
+                top: 20%;
+            }
+        }
+    }
     
 }
 
@@ -580,6 +587,13 @@
     .flat-form-account{
         .group-2{
             flex-wrap: wrap;
+        }
+    }
+    .flat-banner{
+        &.banner-v1{
+            .banner-content{
+                top: 15%;
+            }
         }
     }
 }
