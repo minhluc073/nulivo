@@ -125,12 +125,12 @@ export default function VerifyAccount1() {
                     <div className="container">
                         <div className="card-box-3 card-verify">
                             <div className="flat-title-verify text-center">
-                                <h4 className="title text_black-3">Billing Information</h4>
+                                <h4 className="title text_black-3">Let’s get you verified</h4>
                                 <p>Select your residency and follow the steps</p>
                             </div>
                             <div className="box">
                                 <fieldset>
-                                    <label>First Name *</label>
+                                    <label>Residency</label>
                                     <Select
                                     className="react-select"
                                     placeholder="Country / Region"

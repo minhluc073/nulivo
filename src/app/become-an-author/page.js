@@ -10,10 +10,11 @@ export default function BecomeAuthor() {
     <>
         <Layout>
             <PageTitle
-            title="Verify account"
+            title="Sell Your Products On Nulivo Market"
             subtitle="Join Nulivo Market designers community. Share your creative designs, increase your sales and get good revenue."
             btn
             img
+            cls="page-title-become"
             />
             <div className="flat-breadcrumb">
                 <div className="container">

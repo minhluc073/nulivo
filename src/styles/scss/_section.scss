@@ -93,6 +93,7 @@
 	.box-right {
 		width: 431px;
 	}
+	
 }
 // counter
 .box-counter {
@@ -1160,6 +1161,12 @@
 		align-items: center;
 		gap: 20px;
 		margin-bottom: 30px;
+	}
+	.field-review{
+		margin-bottom: 30px;
+		textarea{
+			margin-top: 10px;
+		}
 	}
 }
 

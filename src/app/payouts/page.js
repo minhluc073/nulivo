@@ -5,6 +5,9 @@ import Image from "next/image"
 import Link from "next/link"
 import Select from "react-select";
 import { dataPayoutHistory } from "@/data/data-dashboard";
+import Nav from 'react-bootstrap/Nav';
+import Tab from 'react-bootstrap/Tab';
+
 
 
 const countrySelect = [
@@ -130,84 +133,128 @@ export default function Payouts(){
                     </div>
                     <form className="box box-payment-request">
                         <div className="h7 title">Submit a payment request</div>
-                        <div className="sub-box group-ip-3">
-                            <div className="card-payment-item text-center">
-                                <div className="card-img">
-                                    <Image src="/images/card/bank.png" alt="card" width={60} height={60}/>
-                                </div>
-                                <div className="title-payment title-font fw-semibold">Bank</div>
-                            </div>
-                            <div className="card-payment-item text-center">
-                                <div className="card-img">
-                                    <Image src="/images/card/paypal.png" alt="card" width={60} height={60}/>
-                                </div>
-                                <div className="title-payment title-font fw-semibold">Paypal</div>
-                            </div>
-                            <div className="card-payment-item text-center">
-                                <div className="card-img">
-                                    <Image src="/images/card/payoneer.png" alt="card" width={60} height={60}/>
-                                </div>
-                                <div className="title-payment title-font fw-semibold">Payoneer</div>
-                            </div>
-                        </div>
-                        <div className="sub-box">
-                            <p className="d-flex gap-4 mb-6"><span>Processing time:</span><span className="fw-bold">2-3 business days</span></p>
-                            <p className="d-flex gap-4"><span>Estimated fees:</span><span className="fw-bold">0.00 USD</span></p>
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">Bank account country</label>
-                                <Select
-                                    className="react-select"
-                                    placeholder="Choose"
-                                    options={countrySelect}
-                                    isSearchable={false}
-                                    styles={colorStyles}
-                                    formatOptionLabel={(countrySelect) => (
-                                        <div className="react-select-option">
-                                        <p>{countrySelect.label}</p>
+                        <Tab.Container defaultActiveKey="bank">
+                            <Nav>
+                                <Nav.Item className="sub-box group-ip-3">
+                                    <Nav.Link eventKey="bank" className="card-payment-item text-center">
+                                        <div className="card-img">
+                                            <Image src="/images/card/bank.png" alt="card" width={60} height={60}/>
                                         </div>
-                                    )}
-                                />
-                        </div>
-                        <div className="sub-box">
-                            <p className="mb-12 title-font fw-semibold">Bank account curency</p>
-                            <p className="text_black-3">Australian dollar (AUD)</p>
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">SWIFT/BIC</label>
-                            <input type="text" placeholder="ABCDEFGHXXX"/>
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">Bank address</label>
-                            <input type="text"/>
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">Bank city</label>
-                            <input type="text"/>
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">Bank province/Sate (optional)</label>
-                                <Select
-                                    className="react-select"
-                                    placeholder="Select a region"
-                                    options={region}
-                                    isSearchable={false}
-                                    styles={colorStyles}
-                                    formatOptionLabel={(region) => (
-                                        <div className="react-select-option">
-                                        <p>{region.label}</p>
+                                        <div className="title-payment title-font fw-semibold">Bank</div>
+                                    </Nav.Link>
+                                    <Nav.Link eventKey="paypal" className="card-payment-item text-center">
+                                        <div className="card-img">
+                                            <Image src="/images/card/paypal.png" alt="card" width={60} height={60}/>
                                         </div>
-                                    )}
-                                />
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">Account number</label>
-                            <input type="number"/>
-                        </div>
-                        <div className="sub-box">
-                            <label className="label">Name of account holder (as shown on bank statement)</label>
-                            <input type="text"/>
-                        </div>
+                                        <div className="title-payment title-font fw-semibold">Paypal</div>
+                                    </Nav.Link>
+                                    <Nav.Link eventKey="payoneer" className="card-payment-item text-center">
+                                        <div className="card-img">
+                                            <Image src="/images/card/payoneer.png" alt="card" width={60} height={60}/>
+                                        </div>
+                                        <div className="title-payment title-font fw-semibold">Payoneer</div>
+                                    </Nav.Link>
+                                </Nav.Item>
+                            </Nav>
+                            <Tab.Content>
+                                <Tab.Pane eventKey="bank">
+                                    <div className="sub-box">
+                                        <p className="d-flex gap-4 mb-6"><span>Processing time:</span><span className="fw-bold">2-3 business days</span></p>
+                                        <p className="d-flex gap-4"><span>Estimated fees:</span><span className="fw-bold">0.00 USD</span></p>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Bank account country</label>
+                                            <Select
+                                                className="react-select"
+                                                placeholder="Choose"
+                                                options={countrySelect}
+                                                isSearchable={false}
+                                                styles={colorStyles}
+                                                formatOptionLabel={(countrySelect) => (
+                                                    <div className="react-select-option">
+                                                    <p>{countrySelect.label}</p>
+                                                    </div>
+                                                )}
+                                            />
+                                    </div>
+                                    <div className="sub-box">
+                                        <p className="mb-12 title-font fw-semibold">Bank account curency</p>
+                                        <p className="text_black-3">Australian dollar (AUD)</p>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">SWIFT/BIC</label>
+                                        <input type="text" placeholder="ABCDEFGHXXX"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Bank address</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Bank city</label>
+                                        <input type="text"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Bank province/Sate (optional)</label>
+                                            <Select
+                                                className="react-select"
+                                                placeholder="Select a region"
+                                                options={region}
+                                                isSearchable={false}
+                                                styles={colorStyles}
+                                                formatOptionLabel={(region) => (
+                                                    <div className="react-select-option">
+                                                    <p>{region.label}</p>
+                                                    </div>
+                                                )}
+                                            />
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Account number</label>
+                                        <input type="number"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Name of account holder (as shown on bank statement)</label>
+                                        <input type="text"/>
+                                    </div>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="paypal">
+                                    <div className="sub-box">
+                                        <p className="d-flex gap-4 mb-6"><span>Processing time:</span><span className="fw-bold">Same day</span></p>
+                                        <p className="d-flex gap-4"><span>Estimated fees:</span><span> Paypal fees may apply</span></p>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Withdraw Amount ($)</label>
+                                        <input type="text" placeholder="Min $50"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Email address of your existing PayPal account</label>
+                                        <input type="text" placeholder="Name, @username, email, or mobile"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Confirm the email address of your existing PayPal account</label>
+                                        <input type="text" placeholder="Name, @username, email, or mobile"/>
+                                    </div>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="payoneer">
+                                    <div className="sub-box">
+                                        <p className="d-flex gap-4 mb-6"><span>Processing time:</span><span className="fw-bold">Same day</span></p>
+                                        <p className="d-flex gap-4"><span>Estimated fees:</span><span> Payoneer fees may apply</span></p>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Withdraw Amount ($)</label>
+                                        <input type="text" placeholder="Min $50"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Email address of your existing Payoneer account</label>
+                                        <input type="text" placeholder="Name, @username, email, or mobile"/>
+                                    </div>
+                                    <div className="sub-box">
+                                        <label className="label">Confirm the email address of your existing Payoneer account</label>
+                                        <input type="text" placeholder="Name, @username, email, or mobile"/>
+                                    </div>
+                                </Tab.Pane>
+                            </Tab.Content>
+                        </Tab.Container>
                         <div className="sub-box">
                             <button className="tf-btn width-1">Send</button>
                         </div>

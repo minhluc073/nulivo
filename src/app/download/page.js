@@ -6,8 +6,21 @@ import { dataDownload } from "@/data/data-dashboard";
 import Image from "next/image";
 import Pagination from "@/components/elements/Pagination";
 import ReactStars from "react-rating-stars-component";
+import { useState } from "react";
+import CanvasRefund from "@/components/elements/CanvasRefund";
+import CanvasRating from "@/components/elements/CanvasRating";
 
 export default function Download() {
+    
+    const [showRefund, setShowRefund] = useState(false);
+    const handleCloseRefund = () => setShowRefund(false);
+    const handleShowRefund = () => setShowRefund(true);
+
+    const [showRating, setShowRating] = useState(false);
+    const handleCloseRating = () => setShowRating(false);
+    const handleShowRating = () => setShowRating(true);
+
+
   return (
     <>
       <Layout loggedIn>
@@ -87,12 +100,13 @@ export default function Download() {
                       <Link
                         href="#"
                         className="mb-10 tf-btn width-1 btn-line-primary"
+                        onClick={handleShowRefund}
                       >
                         Refund
                       </Link>
-                      <div className="d-flex gap-8 align-items-center">
+                      <div className="d-flex gap-8 align-items-center" onClick={handleShowRating}>
                         <span className="text-title-1">Rating:</span>
-                        <ReactStars
+                        {/* <ReactStars
                               classNames="star-item"
                               count={5}
                               size={14}
@@ -101,7 +115,14 @@ export default function Download() {
                               emptySymbol={<i className="icon-star-2"></i>}
                               color="#E1E1E1"
                               activeColor="#FCB500"
-                            />
+                            /> */}
+                            <div className="list-star">
+                                <span className="icon icon-star-2"></span>
+                                <span className="icon icon-star-2"></span>
+                                <span className="icon icon-star-2"></span>
+                                <span className="icon icon-star-2"></span>
+                                <span className="icon icon-star-2"></span>
+                            </div>
                       </div>
                     </td>
                   </tr>
@@ -111,6 +132,8 @@ export default function Download() {
             <Pagination />
           </div>
         </LayoutAdmin>
+        <CanvasRefund showRefund={showRefund} handleCloseRefund={handleCloseRefund} />
+        <CanvasRating showRating={showRating} handleCloseRating={handleCloseRating} />
       </Layout>
     </>
   );

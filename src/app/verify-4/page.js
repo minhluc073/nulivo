@@ -64,7 +64,7 @@ export default function VerifyAccount4() {
                                 <div className="sub-title fw-bold">What i should to do, to confirm my identity?</div>
                                 <ul className="list">
                                     <li className="text-2">Take a selfie by holding your ID</li>
-                                    <li className="text-2">ED card should match and be clearly visible</li>
+                                    <li className="text-2">ID card should match and be clearly visible</li>
                                     <li className="text-2">Your identification document must be next to your face</li>
                                 </ul>
                             </div>

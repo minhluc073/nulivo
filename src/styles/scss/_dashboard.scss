@@ -651,7 +651,11 @@
 
 .box-payment-request{
     .group-ip-3{
+        width: 100%;
         gap: 22px;
+    }
+    .tab-content{
+        margin: 30px 0px;
     }
 }
 .card-payment-item{
@@ -662,6 +666,7 @@
     .title-payment{
         margin-top: 10px;
         @include transition3;
+        color: var(--black-2);
     }
     &:hover,&.active {
         box-shadow: 0px 10px 20px 0px #1405250F;
@@ -733,6 +738,99 @@
         .nav-menu-link{
             .text{
                 display: none;
+            }
+        }
+    }
+}
+
+.canvas-wrapper{
+    .modal-content{
+        border-radius: 8px;   
+    }
+    .modal-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-bottom: 1px solid var(--line);
+        .icon{
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+    .modal-body{
+        padding: 20px;
+        .text{
+            margin-bottom: 20px;
+        }
+        .fieldset{
+            margin-bottom: 15px;
+            .label{
+                font-weight: 600;
+                margin-bottom: 8px;
+            }
+        }
+        textarea{
+            height: 100px;
+        }
+    }
+    .tf-btn,
+    input, textarea{
+        border-radius: 8px;
+    }
+    .box-field-rating{
+        .field-rating-item{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &:not(:last-child){
+                margin-bottom: 8px;
+            }
+           
+        }
+        .rate-star{
+            .icon{
+                color: #E1E1E1;
+            }
+            &.rating-5{
+                .icon{
+                    color: #fcb500;
+                }
+            }
+            &.rating-4{
+                .icon{
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4){
+                        color: #fcb500;
+                    }
+                }
+            }
+            &.rating-3{
+                .icon{
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3){
+                        color: #fcb500;
+                    }
+                }
+            }
+            &.rating-2{
+                .icon{
+                    &:nth-child(1),
+                    &:nth-child(2){
+                        color: #fcb500;
+                    }
+                }
+            }
+            &.rating-1{
+                .icon{
+                    &:first-child{
+                        color: #fcb500;
+                    }
+                }
             }
         }
     }

@@ -683,10 +683,10 @@ export default function SingleItemFree() {
                             </div>
                           </div>
                           <div className="field-review">
-                            <div className="fw-semibold title-font">
+                            <label className="fw-semibold title-font">
                                 Review
-                            </div>
-                            <textarea></textarea>
+                            </label>
+                            <textarea placeholder="Your message"></textarea>
                           </div>
                           <div className="box-rate-check">
                             <div className="fw-semibold title-font">

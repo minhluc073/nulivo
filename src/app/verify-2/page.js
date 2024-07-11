@@ -160,7 +160,7 @@ export default function VerifyAccount2() {
                                 <p className="text-sub">As shown on your passport or ID card. Please use the same language as on your document</p>
                             </div>
                             <div className="box">
-                                <label>Legal name</label>
+                                <label>Date of birth</label>
                                 <div className="group-box-ip">
                                     <div className="flex-grow-1">
                                         <input placeholder="YYYY" type="text"/>   
