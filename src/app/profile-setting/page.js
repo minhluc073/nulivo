@@ -4,6 +4,7 @@ import Link from "next/link"
 import LayoutAdmin from "@/components/layout/LayoutAdmin"
 import Image from "next/image"
 import Select from "react-select";
+import { useState } from "react";
 
 
 const countrySelect = [
@@ -113,8 +114,14 @@ const colorStyles = {
 };
 
 export default function ProfileSetting (){
-
-
+    const [fileAvt, setFileAvt] = useState("/images/avatar/avt-16.jpg");
+    const [fileBg, setFileBg] = useState("/images/banner/banner-profile.jpg");
+    const handleChange = (e) => {
+        setFileAvt(URL.createObjectURL(e.target.files[0]));
+    }
+    const handleChangeBg = (e) => {
+        setFileBg(URL.createObjectURL(e.target.files[0]));
+    }
     return (
         <>
             <Layout loggedIn>
@@ -136,18 +143,29 @@ export default function ProfileSetting (){
                             <div className="h7 title-v2">Profile Setting</div>
                             <div className="box-upload-profile sub-box">
                                 <div className="avatar avt-128 round">
-                                    <Image src="/images/avatar/avt-16.jpg" width={128} height={128} alt="avatar"/>
+                                    <Image src={fileAvt} width={128} height={128} alt="avatar"/>
                                 </div>
                                 <div className="content-right">
                                     <div className="fw-semibold title-font">Upload a new avatar</div>
                                     <div className="box-upload">
-                                        <input type="file" className="ip-file"/>
+                                        <input type="file" className="ip-file" onChange={handleChange}/>
                                         <Link href="#" className="tf-btn">Choose file</Link>
                                         <span>No files selected</span>
                                     </div>
                                     <span className="text-5">Profile Photo must be 200*200px</span>
                                 </div>
                             </div>
+                            <fieldset className="sub-box box-upload-bg">
+                                <div className="img-bg">
+                                    <Image src={fileBg} width={897} height={200} alt="avatar"/>
+                                </div>
+                                <div className="fw-semibold title-font">Upload a new background</div>
+                                <div className="box-upload">
+                                    <input type="file" className="ip-file" onChange={handleChangeBg}/>
+                                    <Link href="#" className="tf-btn">Choose file</Link>
+                                </div>
+                                <p className="text-5">Please choose photo size less 2MB</p>
+                            </fieldset>
                             <fieldset className="sub-box">
                                 <label className="label mb-10">About</label>
                                 <textarea placeholder="Your message" className="textarea-3"></textarea>
